@@ -1,0 +1,7 @@
+{
+  "main": "index.js",
+  "dependencies": {
+    "lua": "^0.0.1",
+    "luaparse": "^0.3.1"
+  }
+}

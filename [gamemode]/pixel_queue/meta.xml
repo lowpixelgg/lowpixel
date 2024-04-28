@@ -1,0 +1,23 @@
+<meta>
+    <script src="dreamcore.lua" type="shared" cache="false" />
+
+
+    <script src="utils/utilities.lua" type="shared" cache="false" />
+    <script src="utils/responsive.lua" type="client" cache="false" />
+    <script src="utils/yaci.lua" type="client" cache="false" />
+
+    <script src="client/design.lua" type="client" cache="false" />
+    <script src="client/main.lua" type="client" cache="false" />
+
+    <script src="core/server/queue.lua" type="shared" cache="false" />
+
+    <script src="infra/events/network.lua" type="shared" cache="false" />        
+    
+    <script src="infra/events/server/refresh.lua" type="server" cache="false" />
+    <script src="infra/events/client/refresh.lua" type="client" cache="false" />
+    
+    <script src="infra/factories/server/makeServerFactory.lua" type="server" cache="false" />
+
+
+    <file src="assets/icons/server.png"/>
+</meta>

@@ -1,0 +1,12 @@
+<meta>
+	<oop>false</oop>
+	<min_mta_version client="1.4.0" server="1.4.0"/>
+	<info name="Debug Console" author="Necktrox" version="1.0.0" type="script" description=""/>
+
+	<file src="images/move_icon.png"/>
+	<file src="images/continue_icon.png"/>
+	<file src="images/pause_icon.png"/>
+
+	<script type="client" src="client.lua" cache="false"/>
+	<script type="server" src="server.lua"/>
+</meta>

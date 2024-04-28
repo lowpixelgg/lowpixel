@@ -1,0 +1,42 @@
+<meta>
+    <oop>true</oop>
+    <info author="FLASHII" version="1.0" />
+    <min_mta_version client="1.5.7-9.20447"></min_mta_version>
+    
+    <script src="dreamcore.lua" type="shared" cache="false" />
+    
+    <script src="utils/yaci.lua" type="client" cache="false" />
+    <script src="utils/responsive.lua" type="client" cache="false" />
+    <script src="utils/svg.lua" type="client" cache="false" />
+    
+    <!-- infra -->
+    <script src="infra/network.lua" type="shared" cache="false" />
+    
+    <!-- client -->
+    <script src="client/gui/link.lua" type="client" cache="false" />
+    <script src="client/gui/blips.lua" type="client" cache="false" />
+    <script src="client/gui/map.lua" type="client" cache="false" />
+    <script src="client/factories/makeClientMapFactory.lua" type="client" cache="false" />
+
+    <script src="client/events/refresh.lua" type="client" cache="false" />
+    
+    <!-- server -->
+    <script src="server/core/pathfind.lua" type="server" cache="false" />
+    <script src="server/events/refresh.lua" type="server" cache="false" />
+    
+    <!-- files -->
+    <file src="assets/blips/gas.png" />
+    <file src="assets/blips/pin.png" />
+    <file src="assets/blips/police.png" />
+    <file src="assets/blips/shop.png" />
+    <file src="assets/blips/store.png" />
+    
+    
+    <file src="assets/arrow.png" />
+    <file src="assets/arrow2.png" />
+    <file src="assets/map.png" />
+    <file src="assets/vignette.png" />
+    
+    
+    <file src="assets/sa_nodes.json" />
+</meta>

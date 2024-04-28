@@ -1,0 +1,181 @@
+<meta>
+  <info author="lowpixel" version="1.0" />
+  <min_mta_version client="1.5.8-9.20718" server="1.5.4-9.11342" />
+
+  <script src="dreamcore.lua" type="shared" cache="false" />
+  <script src="utils/utilities.lua" type="shared" cache="false" />
+
+  <!-- infra -->
+  <script src="infra/events/network.lua" type="shared" cache="false" />
+  <script src="infra/services/db.lua" type="server" cache="false" />
+
+  <script src="infra/api/characters/exports.lua" type="server" cache="false" />
+  <script src="infra/api/vehicles/exports.lua" type="server" cache="false" />
+  <script src="infra/api/inventory/exports.lua" type="server" cache="false" />
+  <script src="infra/api/phone/exports.lua" type="server" cache="false" />
+  <script src="infra/api/meta/exports.lua" type="shared" cache="false" />
+  <script src="infra/api/jobs/exports.lua" type="server" cache="false"/>
+
+
+  <script src="client/watermark.lua" type="client" cache="false" />
+
+  <!-- modules -->
+  <script src="modules/server/main.lua" type="server" cache="false" />
+  <script src="modules/server/users/accounts.lua" type="server" cache="false" />
+
+  <script src="modules/server/characters/repo.lua" type="server" cache="false" />
+
+  <script src="modules/server/inventory/invRepo.lua" type="server" cache="false" />
+  <script src="modules/server/inventory/itemsRepo.lua" type="server" cache="false" />
+  <script src="modules/server/inventory/chestRepo.lua" type="server" cache="false" />
+  
+  <script src="modules/server/vehicles/parkRepo.lua" type="server" cache="false" />
+  <script src="modules/server/vehicles/vehRepo.lua" type="server" cache="false" />
+
+
+  <script src="modules/server/phone/phoneRepo.lua" type="server" cache="false"/>
+  <script src="modules/server/phone/contactsRepo.lua" type="server" cache="false"/>
+  <script src="modules/server/phone/galleryRepo.lua" type="server" cache="false"/>
+  <script src="modules/server/phone/whatsappRepo.lua" type="server" cache="false" />
+  <script src="modules/server/phone/bankRepo.lua" type="server" cache="false" />
+
+  <script src="modules/server/jobs/fisher/fisherRepo.lua" type="server" cache="false" />
+  <script src="modules/server/jobs/fisher/tasksRepo.lua" type="server" cache="false" />
+
+
+  <script src="modules/shared/metas/main.lua" type="shared" cache="false" />
+  <script src="modules/shared/metas/itemsMeta.lua" type="shared" cache="false" />
+  <script src="modules/shared/metas/propsMeta.lua" type="shared" cache="false" />
+  <script src="modules/shared/metas/vehMeta.lua" type="shared" cache="false" />
+  <script src="modules/shared/metas/weaponsMeta.lua" type="shared" cache="false" />
+  <script src="modules/shared/metas/fishMeta.lua" type="shared" cache="false" />
+  <script src="modules/shared/metas/conceMeta.lua" type="shared" cache="false" />
+  <script src="modules/shared/metas/voiceMeta.lua" type="shared" cache="false" />
+  <script src="modules/shared/metas/gameMeta.lua" type="shared" cache="false" />
+
+  <!-- factories -->
+  <script src="infra/factories/server/makeAuthFactory.lua" type="server" cache="false" />
+  <script src="infra/factories/server/makeSaveSystemFactory.lua" type="server" cache="false" />
+
+  <script src="infra/factories/client/makeClientDefaultsFactory.lua" type="client" cache="false"/>
+
+
+  <!-- events -->
+  <script src="infra/events/client/refresh.lua" type="client" cache="false" />
+  <script src="infra/events/server/refresh.lua" type="server" cache="false" />
+
+
+
+  <!-- exports -->
+  <export function="createCharacter" type="server" http="false"/>
+  <export function="getSingleCharacter" type="server" http="false" />
+  <export function="getCharactersByRef" type="server" http="false" />
+  <export function="saveCharacter" type="server" http="false" />
+
+  <export function="getWeaponsMeta" type="shared" />
+  <export function="getItemsMeta" type="shared" />
+  <export function="getSetting" type="shared" />
+  <export function="getPropsMeta" type="shared" />
+  <export function="getVehiclesMeta" type="shared" />
+  <export function="getShowroomsMeta" type="shared" />
+  <export function="getFishMeta" type="shared" />
+  <export function="getVoiceSettings" type="shared" />
+
+  <export function="findVehicleByCharacter" type="server"/>
+  <export function="findVehiclesByCharAndParking" type="server" />
+  <export function="findVehicleByID" type="server"/>
+  <export function="findVehicleByPlate" type="server"/>
+
+  <export function="findChestByElementID" type="server" />
+  <export function="createChest" type="server" />
+  <export function="saveChest" type="server" />
+  <export function="deleteChest" type="server" />
+  <export function="setCurrentChestWeight" type="server" />
+  <export function="findItemsByChest" type="server" />
+  <export function="findChestByID" type="server" />
+
+  <export function="findInvByCharacter" type="server" />
+  <export function="createInventory" type="server" />
+  <export function="saveInventory" type="server" />
+  <export function="deleteInventory" type="server" />
+  <export function="getAllItems" type="server" />
+  <export function="findItemByID" type="server" />
+  <export function="createItem" type="server" />
+  <export function="saveItem" type="server" />
+  <export function="findItemsByState" type="server" />
+  <export function="deleteItem" type="server" />
+  <export function="setCurrentWeight" type="server" />
+  <export function="setCurrentLevel" type="server" />
+
+  <export function="createVehicle" type="server"/>
+  <export function="saveVehicle" type="server"/>
+  <export function="deleteVehicle" type="server"/>
+
+  <export function="findParkingByID" type="server"/>
+  <export function="createParking" type="server"/>
+  <export function="saveParking" type="server"/>
+  <export function="deleteParking" type="server"/>
+
+
+  <export function="createPhone" type="server"/>
+  <export function="findPhoneByOwner" type="server" />
+  <export function="findPhone" type="server"/>
+  <export function="findPhoneByNumber" type="server"/>
+  <export function="savePhone" type="server"/>
+  <export function="deletePhone" type="server"/>
+
+  <export function="createPhoneContact" type="server"/>
+  <export function="findContactByNumber" type="server"/>
+  <export function="findContact" type="server"/>
+  <export function="saveContact" type="server"/>
+  <export function="getAllContactsByPhone" type="server" />
+  <export function="deleteContact" type="server"/>
+
+  <export function="createWhatsApp" type="server" />
+  <export function="findWhatsAppByPhone" type="server" />
+  <export function="getWhatsAppById" type="server" />
+  <export function="deleteWhatsApp" type="server" />
+
+  <export function="createMessage" type="server" />
+  <export function="getAllMessagesFromTo" type="server" />
+  <export function="getAllmessages" type="server" />
+  <export function="deleteMessage" type="server" />
+
+
+  <export function="createGalleryPicture" type="server"/>
+  <export function="getGalleryPicture" type="server"/>
+  <export function="getGalleryPicturesByPhone" type="server"/>
+  <export function="deleteGalleryPicture" type="server"/>
+
+
+  <export function="createBank" type="server" />
+  <export function="getBankByPhone" type="server" />
+  <export function="getBankByAgency" type="server"/>
+  <export function="getBankByID" type="server" />
+  <export function="saveBank" type="server" />
+
+
+  <export function="createKey" type="server" />
+  <export function="getKey" type="server" />
+  <export function="getAllBankKeys" type="server" />
+
+  <export function="createTransaction" type="server" />
+  <export function="getAllBankTransactions" type="server" />
+
+  <export function="createBankContact" type="server" />
+  <export function="getContacts" type="server" />
+  <export function="existsContact" type="server" />
+  <export function="deleteContact" type="server" />
+
+  <export function="createFisher" type="server" />
+  <export function="getFisherByCharacter" type="server" />
+  <export function="saveFisher" type="server" />
+  <export function="saveTask" type="server"/>
+  <export function="deleteTask" type="server" />
+  
+
+  <export function="createTask" type="server" />
+  <export function="getTaskForFisher" type="server" />
+
+  <file src="assets/logo_hd.png" />
+</meta>

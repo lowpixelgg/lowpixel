@@ -1,0 +1,84 @@
+<meta>
+	<info author="rocketmta.com(flashii)" version="1.0.0" />
+	<script src="dreamcore.lua" type="shared" cache="false"  />
+	<min_mta_version server="1.4" />
+
+
+	<!-- Essentials -->
+	<script src="core/manager.lua" type="client" cache="false" />
+	<script src="core/entity.lua" type="client" cache="false" />
+	<script src="core/weapon.lua" type="client" cache="false" />
+	<script src="core/prop.lua" type="client" cache="false" />
+	<script src="core/fpp.lua" type="client" cache="false" />
+	<script src="core/sound.lua" type="client" cache="false" />
+	<script src="core/recoil.lua" type="client" cache="false" />
+	<script src="core/syncer.lua" type="client" cache="false" />
+
+	<!-- core -->
+	<script src="server/core/gun.lua" type="server" cache="false" />
+
+
+	<!-- Handlers-->
+	<script src="infra/events/network.lua" type="shared" cache="false" />
+	<script src="infra/events/server/receiver.lua" type="server" cache="false" />
+	<script src="infra/events/client/refresh.lua" type="client" cache="false" />
+
+
+	<script src="client/factories/makeClientFactory.lua" type="client" cache="false"/>
+	<script src="infra/factories/makeServerFactory.lua" type="server" cache="false" />
+
+	<!-- Weapon Models -->
+	<file src="assets/weapons/srl15.dff" />
+	<file src="assets/weapons/srl15.txd" />
+
+	<file src="assets/weapons/cuntgun.txd"/>
+	<file src="assets/weapons/cuntgun.dff"/>
+
+	<!-- Weapon Skins -->
+	<file src="assets/skins/srl15/default/mag_d.png" />
+	<file src="assets/skins/srl15/default/lower_receiver_d.png" />
+	<file src="assets/skins/srl15/default/upper_receiver_d.png" />
+	<file src="assets/skins/srl15/default/coronha.png" />
+
+	<file src="assets/skins/srl15/red/mag_d.png" />
+	<file src="assets/skins/srl15/red/lower_receiver_d.png" />
+	<file src="assets/skins/srl15/red/upper_receiver_d.png" />
+	<file src="assets/skins/srl15/red/coronha.png" />
+
+	<file src="assets/skins/srl15/purple/mag_d.png" />
+	<file src="assets/skins/srl15/purple/lower_receiver_d.png" />
+	<file src="assets/skins/srl15/purple/upper_receiver_d.png" />
+	<file src="assets/skins/srl15/purple/coronha.png" />
+
+	<file src="assets/skins/cuntgun/default/cuntgunicon.png"/>
+	<file src="assets/skins/cuntgun/default/espingarda_djjr.png"/>
+	<file src="assets/skins/cuntgun/default/muzzle_texture4.png"/>
+
+	<!-- Weapon Props -->
+	<file src="assets/props/redDot.dff" />
+	<file src="assets/props/redDot.txd" />
+
+	<file src="assets/props/silencer556.dff" />
+	<file src="assets/props/silencer556.txd" />
+
+	<!-- Weapon Sounds -->
+	<file src="assets/sounds/ak_far.wav"/>
+	<file src="assets/sounds/ak.wav"/>
+
+	<file src="assets/sounds/m4_far.wav"/>
+	<file src="assets/sounds/m4.wav"/>
+
+	<file src="assets/sounds/mp5_far.wav"/>
+	<file src="assets/sounds/mp5.wav"/>
+
+	<file src="assets/sounds/usp_far.wav"/>
+	<file src="assets/sounds/usp.wav"/>
+
+	<file src="assets/sounds/glock_far.wav"/>
+	<file src="assets/sounds/glock.wav"/>
+
+	<!-- Temporary replace model -->
+	<script src="model_replace.lua" type="client"  />
+
+	<min_mta_version client="1.5.7-9.20147" />
+</meta>

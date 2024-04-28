@@ -1,0 +1,72 @@
+<meta>
+    <oop>true</oop>
+    <info author="lowpixel.gg(flashii, madley, marcio)" />
+    <min_mta_version client="1.5.8-9.20979"></min_mta_version>
+    
+    <script src="dreamcore.lua" type="shared" cache="false"  />
+
+    <script src="utils/yaci.lua" type="shared" cache="false" />
+    <script src="utils/svg.lua" type="client" cache="false" />
+    <script src="utils/responsive.lua" type="client" cache="false" />
+    
+    <!-- interface -->
+    <script src="client/interface/design.lua" type="client" cache="false" />
+    <script src="client/interface/camera.lua" type="client" cache="false" />
+    <script src="client/interface/animations.lua" type="client" cache="false" />
+    <script src="client/interface/tokens/button.lua" type="client" cache="false" />
+
+
+    <script src="client/interface/components/screen.lua" type="client" cache="false" />
+    <script src="client/interface/components/configuration.lua" type="client" cache="false" />
+    <script src="client/interface/components/infocar.lua" type="client" cache="false" />
+    <script src="client/interface/components/slider.lua" type="client" cache="false" />
+    <script src="client/interface/components/tooltip.lua" type="client" cache="false" />
+    <script src="client/interface/components/interactions.lua" type="client" cache="false" />
+    <script src="client/interface/components/buy.lua" type="client" cache="false" />
+    
+    <script src="client/interface/main.lua" type="client" cache="false" />
+    
+    <!-- utilities -->
+    <script src="core/client/vehicle.lua" type="client" cache="false" />
+    <script src="core/client/showroom.lua" type="client" cache="false" />
+    <script src="core/server/manager.lua" type="server"  cache="false" />
+    
+    <script src="handlers/events/network.lua" type="shared" cache="false" />
+    <script src="handlers/events/client/refresh.lua" type="client" cache="false" />
+    <script src="handlers/events/server/refresh.lua" type="server" cache="false" />
+    <script src="handlers/factories/client/makeClientFactory.lua" type="client" cache="false" />
+    <script src="handlers/factories/server/makeServerFactory.lua" type="server" cache="false" />
+    
+    
+    <!-- files -->
+    <file src="assets/images/vignette.png" />
+    <file src="assets/images/categories.png" />
+    <file src="assets/images/box_arrow.png" />
+    <file src="assets/images/glow.png" />
+    <file src="assets/images/box_left.png" />
+    <file src="assets/images/tooltip.png" />
+    
+    
+    <file src="assets/images/icons/config.png" />
+    <file src="assets/images/icons/line.png" />
+    <file src="assets/images/icons/car.png" />
+    <file src="assets/images/icons/book.png" />
+    <file src="assets/images/icons/doors.png" />
+    <file src="assets/images/icons/colors.png" />
+    
+    
+    <file src="assets/ifp/sit_loop_cutscene.ifp" />
+
+    <file src="assets/images/logos/mercedes.png" />
+    <file src="assets/images/logos/nissan.png" />
+    <file src="assets/images/logos/toyota.png" />
+    
+
+    <file src="assets/images/cars/amg.png" />
+    <file src="assets/images/cars/amg-s2.png" />
+    <file src="assets/images/cars/camry.png" />
+    <file src="assets/images/cars/corola.png" />
+    <file src="assets/images/cars/evol3.png" />
+    <file src="assets/images/cars/gls450.png" />
+    <file src="assets/images/cars/toventor.png" />
+</meta>

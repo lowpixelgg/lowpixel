@@ -1,0 +1,86 @@
+{
+    "br": {
+      "Greetings": [
+        "Bom dia",
+        "Boa tarde",
+        "Boa noite",
+        "Boa madrugada"
+      ],
+      "Options": [
+        "Personagens",
+        "Conquistas"
+      ],
+      "Messages": [
+        "Trabalho",
+        "Jogou por",
+        "Jogar",
+        "Dicas"
+      ],
+      "Jobs": [
+        "Mecânico",
+        "Policial"
+      ],
+      "Tips": [
+        "Você pode usar o comando /dicas para ver as dicas do jogo",
+        "Você sabia que pode usar uma faca para abrir latas de comida?",
+        "Dizem que existe algumas facções criminosas no jogo, mas ninguém sabe onde elas estão",
+        "Sabia que pressionando f1 você pode ver o seu celular?"
+      ]
+    },
+    "pt": {
+      "Greetings": [
+        "Bom dia",
+        "Boa tarde",
+        "Boa noite",
+        "Boa madrugada"
+      ],
+      "Options": [
+        "Personagens",
+        "Conquistas"
+      ],
+      "Messages": [
+        "Trabalho",
+        "Jogou durante",
+        "Jogar",
+        "Dicas"
+      ],
+      "Jobs": [
+        "Mecânico",
+        "Policia"
+      ],
+      "Tips": [
+        "Sabias que podes usar o comando /dicas para ver as dicas do jogo?",
+        "Sabias que pode usar uma faca para abrir latas de comida?",
+        "Dizem que existe algumas facções criminosas no jogo, mas ninguém sabe onde elas estão!",
+        "Sabias que quando pressionas f1 podes ver o teu telemóvel?"
+      ]
+    },
+    "eng": {
+      "Greetings": [
+        "Good morning",
+        "Good afternoon",
+        "Good evening",
+        "Good dawn"
+      ],
+      "Options": [
+        "Characters",
+        "Achievements"
+      ],
+      "Messages": [
+        "Job",
+        "Played for",
+        "Play",
+        "Tips"
+      ],
+      "Jobs": [
+        "Mechanic",
+        "Police"
+      ],
+      "Tips": [
+        "Did you know that you can use the command /tips to see the game tips?",
+        "Did you know that you can use a knife to open cans of food?",
+        "They say there are some criminal factions in the game, but no one knows where they are!",
+        "Did you know that when you press f1 you can see your phone?"
+      ]
+    }
+}

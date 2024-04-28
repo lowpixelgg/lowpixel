@@ -1,0 +1,9 @@
+<meta>
+  <script src="main.lua" type="client"/>
+  
+
+  <!-- files -->
+  <file src="assets/leveldev.txd" />
+  <file src="assets/leveldev.dff" />
+  <file src="assets/leveldev.col" />
+</meta>

@@ -1,0 +1,1 @@
+network:fetch("pixel_hospital:onPlayerFall", true):on(function (...) onPlayerFall(...) end);

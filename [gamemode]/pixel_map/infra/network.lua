@@ -1,0 +1,1 @@
+network:create("pixel_map:onClientRequestRoute", false);

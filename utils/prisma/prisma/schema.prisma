@@ -1,0 +1,75 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model characters {
+  id        String? @db.VarChar(255)
+  firstname String? @db.VarChar(255)
+  lastname  String? @db.VarChar(255)
+  address   String? @db.VarChar(255)
+  playTime  Int?
+  hunger    Int?
+  thirst    Int?
+  clothes   String? @db.MediumText
+  model     Int?
+  tattoos   String? @db.MediumText
+  refId     String? @db.VarChar(100)
+  id        Int     @id @default(autoincrement()) @map("_id")
+}
+
+model chest {
+  elementID String? @db.VarChar(100)
+  name      String? @db.VarChar(255)
+  weight    Int?
+  columns   Int?
+  maxWeight Int?
+  id        Int     @id @default(autoincrement()) @map("_id")
+}
+
+model inventories {
+  character String? @db.VarChar(100)
+  weight    Int?
+  maxWeight Int?
+  id        Int     @id @default(autoincrement()) @map("_id")
+}
+
+model items {
+  name      String? @db.VarChar(255)
+  state     Int?
+  timestamp Int?
+  container String? @db.VarChar(255)
+  slot      Int?
+  amount    Int?
+  inventory String? @db.VarChar(255)
+  data      String? @db.VarChar(255)
+  subItemAt String? @db.VarChar(255)
+  chest     String? @db.VarChar(255)
+  id        Int     @id @default(autoincrement()) @map("_id")
+}
+
+model parkings {
+  name       String? @db.VarChar(255)
+  max_cars   Int?
+  position   String? @db.VarChar(255)
+  parking_id String? @db.VarChar(255)
+  id         Int     @id @default(autoincrement()) @map("_id")
+}
+
+model vehicles {
+  character     String? @db.VarChar(100)
+  chest_id      Int?
+  numberplate   String? @db.VarChar(100)
+  fuel          Int?
+  color         String? @db.VarChar(100)
+  damage        Int?
+  stickers      String? @db.VarChar(777)
+  model         String? @db.VarChar(255)
+  parking_id    String? @db.VarChar(255)
+  parking_entry String? @db.VarChar(255)
+  id            Int     @id @default(autoincrement()) @map("_id")
+}

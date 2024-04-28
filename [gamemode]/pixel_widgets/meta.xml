@@ -1,0 +1,54 @@
+<meta>
+    <info author="lowpixel.gg" version="1.0" />
+    <min_mta_version client="1.5.7-9.20447"></min_mta_version>
+    <script src="dreamcore.lua" type="shared" cache="false" />
+    
+    <!-- utils -->
+    <script src="utils/yaci.lua" type="client" cache="false" />
+    <script src="utils/responsive.lua" type="client" cache="false" />
+    <script src="utils/svg.lua" type="client" cache="false" />
+    
+    <script src="design.lua" type="client" cache="false" />
+    
+    <script src="client/widget.lua" type="client" cache="false" />
+    <script src="client/progress.lua" type="client" cache="false" />
+    <script src="client/circle.lua" type="client" cache="false" />
+    <script src="client/help.lua" type="client" cache="false" />
+    
+    <script src="handlers/factories/makeWidgetsFactory.lua" type="client" cache="false" />
+    <script src="handlers/factories/makeHelpFactory.lua" type="client" cache="false" />
+    <script src="handlers/factories/makeProgressFactory.lua" type="client" cache="false" />
+    <script src="handlers/factories/makeEventsFactory.lua" type="client" cache="false" />
+    <script src="handlers/factories/makeCircleFactory.lua" type="client" cache="false" />
+    
+    <script src="handlers/events/refresh.lua" type="client" cache="false" />
+    
+    <script src="handlers/api/exports.lua" type="client" cache="false" />
+    
+    <export function="createWidget" type="client" />
+    <export function="setWidgetPosition" type="client" />
+    <export function="destroyWidget" type="client" />
+    <export function="renderWidget" type="client" />
+    
+    <export function="createProgress" type="client" />
+    <export function="startProgress" type="client" />
+    <export function="destroyProgress" type="client" />
+    
+    
+    <export function="createHelplist" type="client" />
+    <export function="renderHelplist" type="client" />
+
+
+    <export function="createCircleTimer" type="client" />
+    <export function="startCircleTimer" type="client" />
+    <export function="destroyCircle" type="client" />
+    
+    <file src="assets/bg_progress.png" />
+    <file src="assets/bg_dot.png" />
+    <file src="assets/clickme.png" />
+    <file src="assets/car_lock.png"/>
+    
+    <file src="assets/keys/E.png" />
+    <file src="assets/keys/K.png" />
+    <file src="assets/keys/L.png" />
+</meta>

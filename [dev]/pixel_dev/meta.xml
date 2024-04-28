@@ -1,0 +1,6 @@
+<meta>
+  <script src="core/main.lua" type="server" />
+  <script src="core/utils.lua" type="client" />
+  <script src="core/devtools.lua" type="client" />
+  <script src="core/server.lua" type="server" />
+</meta>

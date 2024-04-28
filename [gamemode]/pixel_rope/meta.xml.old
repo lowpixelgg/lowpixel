@@ -1,0 +1,31 @@
+<meta>
+    <oop>true</oop>
+    <file src="rope.png"/>
+    <script src="utils.lua" type="shared"/>
+    <script src="functions.lua" type="shared"/>
+    <script src="server.lua" type="server"/>
+    <script src="client.lua" type="client"/>
+    
+    <script src="test.lua" type="client"/>
+
+    <export function="createRope" type="shared" />
+    <export function="destroyRope" type="shared" />
+    <export function="resetRope" type="shared" />
+    <export function="addRopeElement" type="shared" />
+    <export function="removeRopeElement" type="shared" />
+    <export function="setRopeConstraints" type="shared" />
+    
+    <export function="setRopeStyle" type="shared" />
+    <export function="setRopeWeighting" type="shared" />
+    <export function="setRopeParent" type="shared" />
+    <export function="setRopeUniqueZ" type="shared" />
+    <export function="getNodePosition" type="shared" />
+    <export function="getRopeElements" type="shared" />
+    <export function="getRopeElementId" type="shared" />
+    <export function="getRopeElement" type="shared" />
+    <export function="getRopeConstraints" type="shared" />
+    <export function="getRopeStyle" type="shared" />
+    <export function="getRopeWeighting" type="shared" />
+    <export function="getRopeParent" type="shared" />
+    <export function="getRopeUniqueZ" type="shared" />
+</meta>

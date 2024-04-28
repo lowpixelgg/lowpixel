@@ -1,0 +1,12 @@
+#define iMXAOBayerDitherLevel  5 // Dither Size (int 2 - 8)
+uniform float fMXAOSampleRadius = 1.5; // Sample radius of GI, higher means more large-scale occlusion with less fine-scale details.  (1 - 8)
+#define iMXAOSampleCount 32 // Amount of MXAO samples. Higher means more accurate and less noisy AO at the cost of fps (int 8 - 255)
+#define AO_BLUR_GAMMA 1.5
+uniform float fMXAONormalBias = 0.25; // Normal bias. Normals bias to reduce self-occlusion of surfaces that have a low angle to each other. (0 - 0.8)
+
+#define fMXAOBlurSteps  3  // Blur Steps. Offset count for AO bilateral blur filter. Higher means smoother but also blurrier AO. (int 2 - 5)
+#define fMXAOBlurSharpness 2.0 // Blur Sharpness. AO sharpness, higher means sharper geometry edges but noisier AO, less means smoother AO but blurry in the distance. (0 - 5)
+
+uniform float fMXAOAmbientOcclusionAmount = 0.7; // Ambient Occlusion Amount (0 - 3)
+uniform float fMXAOFadeoutStart = 0.90; // Fadeout start (0 - 1)
+uniform float fMXAOFadeoutEnd = 0.95; // Fadeout end (0 - 1)

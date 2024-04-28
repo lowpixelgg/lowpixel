@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <div id="container">
+      <div id="menu">
+        <img src="assets/logo.png" alt="" />
+      </div>
+
+
+      <div id="box--player">
+        <span class="search"></span>
+        <span class="bell">
+          <div class="notify"></div>
+        </span>
+        <span class="date"></span>
+        <p id="date">{{}}</p>
+        <div id="avatar" class="avatar"></div>
+      </div>
+
+      <div id="box--actions">
+        <h3>
+          <span id="greeting">{{greeting_message}}</span>, <span id="username"></span>.
+          <img src="assets/hand.gif" width="25px" />
+        </h3>
+        <div class="buttons">
+          <div class="item active">
+            <span class="icon"></span>
+            <p>Personagens</p>
+          </div>
+
+          <div class="item">
+            <span class="icon acheviements"></span>
+            <p>Conquistas</p>
+          </div>
+        </div>
+
+        <div id="characters"></div>
+      </div>
+
+      <div id="footer">
+        <div id="box--play">
+          <p>play.lowpixel.gg <span>🌎</span></p>
+          <p>v2.1.0-latest <span>📦</span></p>
+          <span class="more"></span>
+          <button onclick="Lobby.play()">Jogar</button>
+        </div>
+
+        <div id="box--tips">
+          <h1 id="tips-large">Dicas:</h1>
+          <p id="tips">
+            {{ str_tip_1 }}
+          </p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+    <script>
+      class LobbyClass {
+        constructor(username, avatar, characters) {
+          this.characters = characters[0];
+          this.username = username;
+          this.avatar = avatar;
+          this.tips = [
+            "{{ str_tip_1 }}",
+            "{{ str_tip_2 }}",
+            "{{ str_tip_3 }}",
+            "{{ str_tip_4 }}",
+            "{{ str_tip_5 }}",
+          ]
+
+          this.months = [
+            "Jan",
+            "Fev",
+            "Mar",
+            "Abr",
+            "Mai",
+            "Jun",
+            "Jul",
+            "Ago",
+            "Set",
+            "Out",
+            "Nov",
+            "Dez",
+          ];
+
+
+          this.character;
+          this.config();
+          this.list();
+
+
+          document.getElementById("container").style.opacity = "1"
+
+        }
+
+        config() {
+          const greeting = document.getElementById("greeting");
+          const username = document.getElementById("username");
+          const avatar = document.getElementById("avatar");
+          const date = document.getElementById("date");
+          const tips = document.getElementById("tips");
+          const getDate = new Date();
+          const stringDate = `8 ${this.months[getDate.getMonth()]}. ${getDate.getFullYear()}`
+
+          username.innerText = this.username;
+          greeting.innerText = greetingMessage();
+
+          date.innerHTML = stringDate;
+
+          if (this.avatar !== 'error') {
+            avatar.style.backgroundImage = `url("data:${detectMimeType(this.avatar)};base64, ${this.avatar}")`;
+          } else {
+            avatar.style.background = "linear-gradient(139.97deg, #BD00FF 29.04%, #00FF29 98.36%)"
+          }
+
+          setInterval(() => {
+            tips.style.opacity = "0"
+
+            setTimeout(() => {
+              tips.innerText = this.tips[Math.floor(Math.random() * this.tips.length)]
+              tips.style.opacity = "1"
+            }, 2000)
+
+          }, 15000)
+        }
+
+        list() {
+          const list = document.getElementById("characters");
+          let output = "";
+
+          for (let character of this.characters) {
+            output += `
+              <div onClick="Lobby.select('${character.id}')" id="${character.id}" class="card--player">
+                <h1>${character.firstname} ${character.lastname}</h1>
+                <p>
+                  Trabalho: ${character.job ? character.job : "N/A"} <br />
+                  Jogou por ${formatTime(character.playTime)}
+                </p>
+              </div>
+          `;
+          }
+
+          list.innerHTML = output;
+        }
+
+        select(id) {
+          if (this.character && this.character !== id) {
+            const toRemove = document.getElementById(this.character);
+            toRemove.setAttribute("class", "card--player");
+            mta.triggerEvent("pixel_lobby:unselect", this.characters.findIndex(character => character.id === this.character) + 1);
+          }
+
+
+          const row = document.getElementById(id);
+          this.character = id;
+
+          row.setAttribute("class", "card--player select");
+          mta.triggerEvent("pixel_lobby:select", this.characters.findIndex(character => character.id === this.character) + 1);
+        }
+
+
+        play () {
+          if (!this.character) {
+            mta.triggerEvent("pixel_lobby:withoutCharacter", true)
+            return
+          }
+
+          document.getElementById("container").style.opacity = "0";
+
+          setTimeout(() => {
+            mta.triggerEvent("pixel_lobby:play", this.character);
+          }, 1000)
+        }
+      }
+
+      const greetingMessage = () => {
+        let h = new Date().toLocaleTimeString("pt-BR", {
+          hour: "numeric",
+          hour12: false,
+        });
+        if (h >= 0 && h <= 5) {
+          return "Boa madrugada";
+        } else if (h >= 6 && h < 12) {
+          return "Bom dia";
+        } else if (h >= 12 && h < 18) {
+          return "Boa tarde";
+        } else if (h >= 18 && h <= 23) {
+          return "Boa noite";
+        }
+      };
+
+      var signatures = {
+        JVBERi0: "application/pdf",
+        R0lGODdh: "image/gif",
+        R0lGODlh: "image/gif",
+        iVBORw0KGgo: "image/png",
+        "/9j/": "image/jpg"
+      };
+
+      function detectMimeType(b64) {
+        for (var s in signatures) {
+          if (b64.indexOf(s) === 0) {
+            return signatures[s];
+          }
+        }
+      }
+      // // Get the modal
+      // var modal = document.getElementById("myModal");
+
+      // // Get the button that opens the modal
+      // var btn = document.getElementById("myBtn");
+
+      // // Get the <span> element that closes the modal
+      // var span = document.getElementsByClassName("close")[0];
+
+      // modal.style.display = "block";
+      // // When the user clicks on <span> (x), close the modal
+      // span.onclick = function() {
+      //   modal.style.display = "none";
+      // }
+
+      // // When the user clicks anywhere outside of the modal, close it
+      // window.onclick = function(event) {
+      //   if (event.target == modal) {
+      //     modal.style.display = "none";
+      //   }
+      // }
+
+      function formatTime(value) {
+          let hours = Math.floor(value / 60);
+          let minutes = value % 60;
+
+          if (hours >= 1) {
+            return `${hours} hora(s)`;
+          } else {
+            return `${minutes} minuto(s)`;
+          }
+      }
+
+    </script>
+  </body>
+</html>

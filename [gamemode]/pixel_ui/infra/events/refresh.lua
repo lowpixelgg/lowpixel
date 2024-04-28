@@ -1,0 +1,1 @@
+addEventHandler("onClientClick", root, makeLayoutBoxEvents);

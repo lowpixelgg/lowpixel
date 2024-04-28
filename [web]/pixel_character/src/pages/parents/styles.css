@@ -1,0 +1,135 @@
+.parentsContainer {
+  width: 280px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.parentsContainer .col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.parentsContainer .col label {
+  color: #f8f9fa;
+  font-size: 0.75rem;
+}
+
+.parentsContainer .listWrap {
+  width: 100%;
+  height: 55vh;
+  min-height: 360px;
+  max-height: 420px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 4px;
+  position: relative;
+}
+
+.parentsContainer .listWrap::after {
+  content: "";
+  width: 100%;
+  height: 25%;
+  scroll-snap-align: start;
+}
+
+.parentsContainer .listWrap::-webkit-scrollbar {
+  width: 4px;
+}
+
+.parentsContainer .listWrap::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+}
+
+.parentsContainer .listWrap::-webkit-scrollbar-thumb {
+  background: #c8272c;
+  border-radius: 4px;
+}
+
+.parentsContainer .listWrap .listItem {
+  width: 32%;
+  height: calc(26% - 8px);
+  padding: 4px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.07);
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 6px;
+  scroll-snap-align: end;
+  transition: all 0.25s ease;
+  opacity: 0.2;
+}
+
+.parentsContainer .listWrap .listItem.isVisible {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.parentsContainer .listWrap .listItem.active {
+  filter: drop-shadow(0px -7px 8px rgba(200, 39, 44, 0.71));
+  border-color: #c8272c;
+}
+
+.parentsContainer .listWrap .listItem p {
+  font-size: 0.75rem;
+  color: #f8f9fa;
+}
+
+.parentsContainer .listWrap .listItem img {
+  /* width: 100%; */
+  height: 72%;
+  max-width: 64px;
+  z-index: 2;
+}
+
+.parentsContainer .skinList {
+  width: 100%;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.parentsContainer .skinList .skinItem {
+  cursor: pointer;
+  position: relative;
+}
+
+.parentsContainer .skinList .skinItem::before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  transform: scale(0);
+  top: 12%;
+  left: 15%;
+  color: #f8f9fa;
+  background: url("https://api.iconify.design/mingcute/check-fill.svg?color=%23f8f9fa")
+    no-repeat center center / contain;
+  opacity: 0;
+  transition: 0.25s ease;
+}
+
+.parentsContainer .skinList .skinItem.active::before {
+  width: 70%;
+  height: 70%;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.parentsContainer .skinList .skinItem img {
+  width: 32px;
+}

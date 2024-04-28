@@ -1,0 +1,35 @@
+<meta>
+    <script src="global.lua" type="shared" cache="false"/>
+    <script src="client.lua" type="client" cache="false"/>
+
+   	<file src="web-side/index.html" cache="false"/>	
+   	<file src="web-side/script.js" cache="false"/>	
+   	<file src="web-side/style.css" cache="false"/>	
+   	<file src="web-side/transitions.css" cache="false"/>
+
+   	<file src="web-side/PFDinDisplayPro-Bold.woff" cache="false"/>	
+   	<file src="web-side/PFDinDisplayPro-Regular.woff" cache="false"/>	
+
+	<export function="hideByComplete" type="client" />
+
+   	<file src="web-side/images/water.svg" cache="false"/>
+   	<file src="web-side/images/virus.svg" cache="false"/>	
+   	<file src="web-side/images/test.svg" cache="false"/>	
+   	<file src="web-side/images/stress.svg" cache="false"/>
+   	<file src="web-side/images/stamina.svg" cache="false"/>	
+   	<file src="web-side/images/shield.svg" cache="false"/>	
+   	<file src="web-side/images/seatbelt.svg" cache="false"/>
+   	<file src="web-side/images/play.svg" cache="false"/>	
+   	<file src="web-side/images/loc.svg" cache="false"/>
+   	<file src="web-side/images/line6.svg" cache="false"/>	
+   	<file src="web-side/images/line5.svg" cache="false"/>		
+   	<file src="web-side/images/line4.svg" cache="false"/>	
+   	<file src="web-side/images/line3.svg" cache="false"/>
+   	<file src="web-side/images/line2.svg" cache="false"/>	
+   	<file src="web-side/images/line.svg" cache="false"/>		
+   	<file src="web-side/images/life.svg" cache="false"/>	
+   	<file src="web-side/images/gas.svg" cache="false"/>
+   	<file src="web-side/images/freq.svg" cache="false"/>	
+   	<file src="web-side/images/food.svg" cache="false"/>		
+   	<file src="web-side/images/clock.svg" cache="false"/>					   		   		
+</meta>

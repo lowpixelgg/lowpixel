@@ -1,0 +1,58 @@
+<meta>
+    <info author="lowpixel.gg" version="1.0" />
+
+    <script src="dreamcore.lua" type="shared" cache="false" />
+    
+    <script src="utils/yaci.lua" type="client" cache="false" />
+    <script src="utils/svg.lua" type="client" cache="false" />
+    <script src="utils/response.lua" type="client" cache="false" />
+    <script src="utils/utilities.lua" type="client" cache="false" />
+
+    <script src="client/core/waterzones.lua" type="client" cache="false" />
+    <script src="server/core/fisher.lua" type="server" cache="false" />
+    <script src="server/core/sell.lua" type="server" cache="false"/>
+    <script src="server/core/tasks.lua" type="server" cache="false" />
+
+    <script src="client/gui/design.lua" type="client" cache="false" />
+    <script src="client/gui/WaterAlert.lua" type="client" cache="false" />
+    <script src="client/gui/FindZone.lua" type="client" cache="false" />
+    <script src="client/gui/FloaterWidget.lua" type="client" cache="false" />
+    <script src="client/gui/GameUI.lua" type="client" cache="false" />
+    <script src="client/gui/SellUI.lua" type="client" cache="false" />
+
+    <script src="infra/events/network.lua" type="shared" cache="false" />
+    <script src="infra/loaders/ifpLoader.lua" type="client" cache="false" />
+    
+    <script src="server/factories/makeFishingJob.lua" type="server" cache="false" />
+    <script src="server/factories/makeFishingSell.lua" type="server" cache="false" />
+    
+    <script src="client/factories/makeSellClient.lua" type="client" cache="false" />
+    <script src="client/factories/makeFisherHandler.lua" type="client" cache="false" />
+   
+   
+    <script src="client/events/refresh.lua" type="client" cache="false" />
+    <script src="server/events/refresh.lua" type="server" cache="false" />
+
+
+    <file src="assets/vara/fishingrod.col" />
+    <file src="assets/vara/fishingrod.dff" />
+    <file src="assets/vara/fishingrod.txd" />
+
+    <file src="assets/boia/boia.dff" />
+    <file src="assets/icons/widget.png" />
+    <file src="assets/icons/get_fish.png" />
+    <file src="assets/icons/fish.png" />
+    <file src="assets/icons/point.png" />
+
+    <file src="assets/minigame/bar.png" />
+    <file src="assets/minigame/bar_color.png" />
+    <file src="assets/minigame/bar_color_rect.png" />
+    <file src="assets/minigame/vignette.png"/>
+
+
+    <file src="assets/peds/cwmofr.dff"/>
+    <file src="assets/peds/cwmofr.txd"/>
+
+    <file src="assets/nui/index.html"/>
+    <file src="assets/nui/app.js"/>
+</meta>

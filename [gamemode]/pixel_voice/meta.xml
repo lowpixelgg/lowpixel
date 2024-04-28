@@ -1,0 +1,21 @@
+<meta>
+    <script src="dreamcore.lua" type="shared" cache="false" />
+    <script src="utils/utils.lua" type="shared" cache="false" />
+    <script src="utils/responsive.lua" type="client" cache="false" />
+
+
+    <script src="infra/services/websocket.lua" type="client" cache="false" />
+
+    <script src="core/client/voipWorker.lua" type="client" cache="false" />
+
+
+    <script src="infra/factories/client/makeClientFactory.lua" type="client" cache="false" />
+    <script src="infra/factories/server/makeServerFactory.lua" type="server" cache="false" />
+
+    <script src="infra/events/network.lua" type="shared" cache="false" />
+    <script src="infra/events/client/refresh.lua" type="client" cache="false" />
+    <script src="infra/events/server/refresh.lua" type="server" cache="false" />
+
+    <file src="assets/websocket/index.html"/>
+    <file src="assets/websocket/websocket.js"/>
+</meta>

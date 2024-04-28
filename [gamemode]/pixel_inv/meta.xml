@@ -1,0 +1,177 @@
+<meta>
+    <info author="lowpixel.gg" version="1.0.0" />
+    <min_mta_version client="1.5.8-9.20979"></min_mta_version>
+    
+    <script src="dreamcore.lua" type="shared" cache="false" />
+    
+
+    <!-- utilitires -->
+    <script src="utils/yaci.lua" type="client" cache="false" />
+    <script src="utils/svg.lua" type="client" cache="false" />
+    <script src="utils/utils.lua" type="client" cache="false" />
+    <script src="utils/responsive.lua" type="client" cache="false" />
+    <script src="utils/serverUtils.lua" type="server" cache="false" />
+
+    <script src="core/client/slot.lua" type="client"  cache="false" />
+    <script src="core/client/person.lua" type="client"  cache="false" />
+    <script src="core/client/container.lua" type="client" cache="false" />
+    <script src="core/client/trade.lua" type="client" cache="false" />
+    <script src="core/client/item.lua" type="client" cache="false" />
+    <script src="core/client/switch.lua" type="client" cache="false" />
+
+
+    <script src="core/server/manager.lua" type="server"  cache="false"/>
+    <script src="core/server/trading.lua" type="server" cache="false" />
+    <script src="core/server/chest.lua" type="server" cache="false" />
+
+    <script src="client/interface/design.lua" type="client"  cache="false"/>
+    <script src="client/interface/animator.lua" type="client" cache="false" />
+    <script src="client/interface/tokens/slot.lua" type="client" cache="false" /> 
+    <script src="client/interface/tokens/prop.lua" type="client" cache="false" /> 
+    <script src="client/interface/tokens/tab.lua" type="client" cache="false" /> 
+    <script src="client/interface/tokens/button.lua" type="client" cache="false" />
+    <script src="client/interface/tokens/receive.lua" type="client" cache="false" /> 
+    <script src="client/interface/tokens/info.lua" type="client" cache="false" />
+    <script src="client/interface/tokens/subItem.lua" type="client" cache="false" />
+    <script src="client/interface/components/minecraft.lua" type="client" cache="false" /> 
+    <script src="client/interface/components/separate.lua" type="client" cache="false" /> 
+    <script src="client/interface/components/actions.lua" type="client" cache="false" /> 
+    <script src="client/interface/components/inventory.lua" type="client"  cache="false" /> 
+    <script src="client/interface/components/hotbar.lua" type="client" cache="false" /> 
+    <script src="client/interface/components/person.lua" type="client"  cache="false" /> 
+    <script src="client/interface/components/trade.lua" type="client"  cache="false" /> 
+    <script src="client/interface/components/chest.lua" type="client"  cache="false" /> 
+ 
+
+    <script src="client/interface/main.lua" type="client" cache="false" />
+    <script src="infra/factories/client/makeClientEventsFactory.lua" type="client" cache="false" />
+
+    
+    <script src="infra/factories/server/makeServerFactory.lua" type="server" cache="false" />
+
+    <script src="infra/events/network.lua" type="server" cache="false"  />
+    <script src="infra/events/server/refresh.lua" type="server" cache="false" />
+    <script src="infra/events/client/refresh.lua" type="client" cache="false"  />
+
+    <script src="infra/api/server/exports.lua" type="server" cache="false" />
+    <script src="infra/api/client/exports.lua" type="client" cache="false" />
+
+    <!-- exports -->
+    <export function="registryInventory" type="server"/>
+    <export function="hasIsnventory" type="server" />
+    <export function="givePlayerItem" type="server" />
+    <export function="takePlayerItem" type="server" />
+    <export function="hasPlayerItem" type="server" />
+    <export function="registerChest" type="server" />
+    <export function="findItemByData" type="server" />
+    <export function="hasAvailableSlot" type="server" />
+    <export function="getItemsByCategory" type="server" />
+    <export function="setInventoryLevel" type="server" />
+    <export function="setInventoryWeight" type="server" />
+    <export function="getItemById" type="server" />
+
+    <export function="editItemdata" type="server" />
+    <export function="getSubItemsAt" type="server" />
+    <export function="takePlayerItemById" type="server" />
+
+
+    <export function="hideByComplete" type="client" />
+    <export function="closeChestUI" type="client" />
+
+
+
+    <!-- files -->
+    <file src="assets/images/background.png" />
+    <file src="assets/images/slot_bg2.png"/>
+    <file src="assets/images/check_circle.png" />
+    <file src="assets/images/check_check.png" />
+    <file src="assets/images/checkbox.png" />
+    <file src="assets/images/eclipse.png"/>
+
+    <file src="assets/images/slot_bg.png" />
+    <file src="assets/images/slot_numb.png" />
+    
+    <file src="assets/images/bg_clothing.png" />
+    <file src="assets/images/bg_trade.png" />
+    <file src="assets/images/bg_menu.png" />
+    <file src="assets/images/bg_bag.png" />
+    <file src="assets/images/bg_weight.png" />
+    <file src="assets/images/slot_lock.png" />
+    <file src="assets/images/bg_text.png" />
+    <file src="assets/images/bg_und.png" />
+    <file src="assets/images/slot_bg2_outline.png"/>
+    <file src="assets/images/slot_bg2_glow.png"/>
+    
+    <file src="assets/images/person.png" />
+    <file src="assets/images/bg_person.png" />
+
+    <file src="assets/images/bg_info.png" />
+    <file src="assets/images/bg_button.png" />
+    
+    <!-- person -->
+    <file src="assets/images/person/bag.png" />
+    <file src="assets/images/person/chain.png" />
+    <file src="assets/images/person/clock.png" />
+    <file src="assets/images/person/foot.png" />
+    <file src="assets/images/person/hat.png" />
+    <file src="assets/images/person/lower.png" />
+    <file src="assets/images/person/mask.png" />
+    <file src="assets/images/person/ocle.png" />
+    <file src="assets/images/person/plus.png" />
+    <file src="assets/images/person/ring.png" />
+    <file src="assets/images/person/upper.png" />
+    <file src="assets/images/person/upper_proof.png" />
+
+
+    <!-- items -->
+    <file src="assets/images/items/1.png" />
+    <file src="assets/images/items/2.png" />
+    <file src="assets/images/items/3.png" />
+    <file src="assets/images/items/4.png" />
+    <file src="assets/images/items/5.png" />
+    <file src="assets/images/items/6.png" />
+    <file src="assets/images/items/7.png" />
+    <file src="assets/images/items/8.png" />
+    <file src="assets/images/items/9.png" />
+    <file src="assets/images/items/10.png" />
+    <file src="assets/images/items/upscaled/10_upscaled.png" />
+    <file src="assets/images/items/11.png" />
+
+    <file src="assets/images/items/12.png" />
+    <file src="assets/images/items/upscaled/12_upscaled.png" />
+    
+    <file src="assets/images/items/13.png"/>
+    <file src="assets/images/items/14.png"/>
+    <file src="assets/images/items/15.png"/>
+
+    <file src="assets/images/items/lp_fish_corvina.png"/>
+    <file src="assets/images/items/lp_fish_piau.png"/>
+
+    <file src="assets/images/items/lp_apple.png"/>
+    <file src="assets/images/items/lp_breakfast-sandwich.png"/>
+    <file src="assets/images/items/lp_chicken-bucket.png"/>
+    <file src="assets/images/items/lp_softdrink.png"/>
+    <file src="assets/images/items/lp_burger.png"/>
+    <file src="assets/images/items/lp_pizza.png"/>
+
+    <!-- animals -->
+    <file src="assets/images/items/lp_animal_meat.png"/>
+    <file src="assets/images/items/lp_animal_bones.png"/>
+    <file src="assets/images/items/lp_animal_leather.png"/>
+
+
+
+
+
+    <!-- guns -->
+    <file src="assets/images/items/lp_cuntgun.png"/>
+    <file src="assets/images/items/lp_pellet.png"/>
+    <file src="assets/images/items/lp_pellet_clip.png"/>
+
+
+    <file src="assets/images/items/pants_base.png"/>
+    <file src="assets/images/items/torso_base.png"/>
+    <file src="assets/images/items/shoe_base.png"/>
+    
+    <file src="assets/images/receive.png" />
+</meta>

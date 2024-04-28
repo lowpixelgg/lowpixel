@@ -1,0 +1,16 @@
+<meta>
+    <info author="rocketmta.com(flashii)" />
+
+    <script src="shared/locales.lua" type="client"  />
+    <script src="client/main.lua" type="client" />
+
+
+    <script src="handlers/exports/exports.lua" type="client"  />
+
+    <file src="locales/english.json"/>
+    <file src="locales/portugues.json"/>
+    <file src="locales/russian.json"/>
+    <file src="locales/spanish.json"/>
+
+    <export function="getString" type="client" />
+</meta>

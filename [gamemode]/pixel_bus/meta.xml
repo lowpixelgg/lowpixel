@@ -1,0 +1,5 @@
+<meta>
+    <script src="mock.lua" type="client" cache="false" validate="true"/>
+
+    <file src="assets/nodes.json"/>
+</meta>

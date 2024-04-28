@@ -1,0 +1,21 @@
+<meta>
+    <info author="rocketmta.com(flashii)" version="1.0.0" />
+
+    <script src="dreamcore.lua" type="shared"/>
+    <script src="utils/instant.lua" type="shared"/>
+    <script src="utils/rendertarget.lua" type="client" />
+    <script src="utils/utils.lua" type="client" />
+
+
+    <script src="essentials/client/design.lua" type="client" />
+    <script src="essentials/client/components/visualizer.lua" type="client" />
+    <script src="essentials/client/index.lua" type="client" />
+
+    <script src="handlers/client/exportsAPI.lua" type="client" />
+
+    <export function="create" type="client" />
+
+    <file src="assets/visuals.png"/>
+    <file src="assets/money.png"/>
+    <file src="assets/backspace.png" />
+</meta>

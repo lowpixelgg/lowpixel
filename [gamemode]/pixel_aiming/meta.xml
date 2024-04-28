@@ -1,0 +1,12 @@
+<meta>
+    <script src="client/loaders/engineLoadPointer.lua" type="client" cache="false"/>
+    <script src="client/loaders/engineLoadIFP.lua" type="client" cache="false"/>
+    <script src="client/pointer/main_c.lua" type="client" cache="false"/>
+    <script src='server/bearing/main.lua' type='server' />
+    <script src='server/pointer/main_s.lua' type='server' />
+
+    <file src="assets/invisible/invisible.dff" />
+    <file src="assets/invisible/invisible.txd" />
+
+    <file src="assets/IFP/bearings.ifp" />
+</meta>

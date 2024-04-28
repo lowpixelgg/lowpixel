@@ -1,0 +1,29 @@
+<meta>
+    <info author="LODS" version="1.0.0" name="rocket_editbox" />
+    <min_mta_version client="1.5.8-9.20979"></min_mta_version>
+    
+    <!-- Scripts -->
+    <script src="client/Core.lua" type="client" cache="false" />
+    <script src="utils/Useful.lua" type="client" cache="false" />
+    <script src="client/exportsAPI.lua" type="client" cache="false" />
+    
+    <script src="dist/editbox.lua" type="client" cache="false" />
+    
+    <!-- Exports -->
+    <export function="loadEditboxClass" type="client" />
+    
+    <export function="createEditbox" type="client" />
+    <export function="renderEditbox" type="client" />
+    <export function="clickEditbox" type="client" />
+    <export function="keyEditbox" type="client" />
+    <export function="pasteEditbox" type="client" />
+    <export function="charEditbox" type="client" />
+    <export function="setTextEditbox" type="client" />
+    <export function="getTextEditbox" type="client" />
+    <export function="hasSelectionEditbox" type="client" />
+    <export function="mouseReleaseEditbox" type="client" />
+    <export function="clearEditbox" type="client" />
+    <export function="setPropertyEditbox" type="client" />
+    <export function="destroyEditbox" type="client" />
+    <export function="focusedEditbox" type="client" />
+</meta>

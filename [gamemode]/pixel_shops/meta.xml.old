@@ -1,0 +1,29 @@
+<meta>
+    <script src="dreamcore.lua" type="shared" cache="false" />
+
+    <script src="utils/yaci.lua" type="client" cache="false" />
+    <script src="utils/svg.lua" type="client" cache="false" />
+    <script src="utils/responsive.lua" type="client" cache="false" />
+
+    <script src="infra/network.lua" type="shared" cache="false" />    
+
+    <script src="client/gui/design.lua" type="client" cache="false" />
+    <script src="client/gui/components/item.lua" type="client" cache="false" />
+    <script src="client/gui/main.lua" type="client" cache="false"/>
+    <script src="client/factories/makeClientFactory.lua" type="client" cache="false" />
+    <script src="client/refresh/refresh.lua" type="client" cache="false" />
+
+    <script src="server/core/shop.lua" type="server" cache="false" />
+    <script src="server/factories/makeServerFactory.lua" type="server" cache="false" />
+    <script src="server/events/refresh.lua" type="server" cache="false"/>
+
+
+    <!-- files -->
+    <file src="assets/vignette.png"/>
+    <file src="assets/rectangle.png"/>
+    <file src="assets/slot.png"/>
+    <file src="assets/sub.png"/>
+    <file src="assets/add.png"/>
+    <file src="assets/numb.png"/>
+    <file src="assets/glow.png"/>
+</meta>

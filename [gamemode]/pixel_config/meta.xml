@@ -1,0 +1,13 @@
+<meta>
+  <info author="flashii" version="1.0.0" name="rocket_config" description="Config Manager" />
+  <download_priority_group>999</download_priority_group>
+
+  <script src="shared/ConfigStorage.lua" type="shared"  />
+  <script src="client/player_prefs.lua" type="client"  />
+  <script src="exportsAPI.lua" type="client"  />
+
+
+  <export function="setDefault" type="client"/>
+  <export function="set" type="client" http="false"/>
+  <export function="get" type="client" http="false"/>
+</meta>

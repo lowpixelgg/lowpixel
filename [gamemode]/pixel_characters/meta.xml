@@ -1,0 +1,408 @@
+<meta>
+  <info author="lowpixel.gg" version="1.0" />
+
+  <!-- avulse -->
+  <script src="settings.lua" type="shared" cache="false" />
+
+  <!-- shared -->
+  <script src="dreamcore.lua" type="shared" cache="false" />
+  <script src="utils/utilities.lua" type="server" cache="false" />
+
+  <!-- client -->
+  <script src="loaders/skinReplace.lua" type="client" cache="false" />
+  
+  <script src="modules/client/clothing/shaders.lua" type="client" cache="false" />
+  <script src="modules/client/clothing/clothing.lua" type="client" cache="false" />
+  <script src="modules/client/clothing/tattoos.lua" type="client" cache="false" />
+
+  <script src="modules/client/stats/stats.lua" type="client" cache="false" />
+  <script src="modules/client/stats/tasks/hunger.lua" type="client" cache="false" />
+  <script src="modules/client/stats/tasks/thirst.lua" type="client" cache="false" />
+  <script src="modules/client/stats/tasks/stamina.lua" type="client" cache="false" />
+  <script src="modules/client/stats/timer.lua" type="client" cache="false" />
+
+
+  <script src="modules/shared/data/element.lua" type="server" cache="false" />
+  <script src="modules/server/spawn.lua" type="server" cache="false" />
+  <script src="modules/server/props.lua" type="server" cache="false" />
+
+
+  <!-- infra -->
+  <script src="infra/factories/shared/makeClothesFactory.lua" type="shared" cache="false" />
+  <script src="infra/factories/client/makeClientStatsFactory.lua" type="client" cache="false"/>
+  <script src="infra/factories/server/makeServerFactory.lua" type="server" cache="false" />
+  <script src="infra/factories/server/makeServerPropsFactory.lua" type="server" cache="false" />
+
+  <script src="infra/events/network.lua" type="shared" cache="false" />
+  <script src="infra/events/client/refresh.lua" type="client" cache="false" />
+  <script src="infra/events/server/refresh.lua" type="server" cache="false"/>
+
+
+
+  <script src="infra/api/exports.lua" type="server" cache="false" />
+  <script src="infra/api/client/exports.lua" type="client" cache="false" />
+a
+  <!-- api -->
+  <export function="setData" type="server" />
+  <export function="getData" type="server" />
+  <export function="clearData" type="server" />
+  <export function="getConfig" type="shared" />
+
+  <export function="setPlayerClothe" type="client" />
+  <export function="remPlayerClothe" type="client" />
+  <export function="getPlayerClothes" type="client" />
+  <export function="setPlayerClothecolor" type="client" />
+  <export function="destroyPlayerClothes" type="client" />
+
+  <export function="spawn" type="server" />
+
+  <export function="setPlayerAttachment" type="server"/>
+  <export function="removePlayerAttachment" type="server"/>
+
+  <!-- assets -->
+  <file src="assets/selection.png" />
+  
+
+
+  <!-- variants -->
+  <file src="assets/genders/fem/mp_fem_1.dff"/>
+  <file src="assets/genders/fem/mp_fem_2.dff"/>
+  <file src="assets/genders/fem/mp_fem_3.dff"/>
+  <file src="assets/genders/fem/mp_fem_4.dff"/>
+  <file src="assets/genders/fem/mp_fem_5.dff"/>
+  <file src="assets/genders/fem/mp_fem_6.dff"/>
+  <file src="assets/genders/fem/mp_fem_7.dff"/>
+  <file src="assets/genders/fem/mp_fem_8.dff"/>
+  <file src="assets/genders/fem/mp_fem_9.dff"/>
+  <file src="assets/genders/fem/mp_fem_10.dff"/>
+  <file src="assets/genders/fem/mp_fem_texture.txd"/>
+
+
+
+  <!-- feminine textures -->
+  <file src="assets/genders/fem/textures/body/faces/ara/1.png"/>
+  <file src="assets/genders/fem/textures/body/faces/ara/2.png"/>
+  <file src="assets/genders/fem/textures/body/faces/ara/3.png"/>
+  <file src="assets/genders/fem/textures/body/faces/ara/4.png"/>
+  <file src="assets/genders/fem/textures/body/faces/ara/5.png"/>
+  <file src="assets/genders/fem/textures/body/faces/ara/6.png"/>
+
+
+  <file src="assets/genders/fem/textures/body/faces/bla/1.png"/>
+  <file src="assets/genders/fem/textures/body/faces/bla/2.png"/>
+  <file src="assets/genders/fem/textures/body/faces/bla/3.png"/>
+  <file src="assets/genders/fem/textures/body/faces/bla/4.png"/>
+  <file src="assets/genders/fem/textures/body/faces/bla/5.png"/>
+  <file src="assets/genders/fem/textures/body/faces/bla/6.png"/>
+  <file src="assets/genders/fem/textures/body/faces/bla/7.png"/>
+  <file src="assets/genders/fem/textures/body/faces/bla/8.png"/>
+
+
+  <file src="assets/genders/fem/textures/body/faces/lat/1.png"/>
+  <file src="assets/genders/fem/textures/body/faces/lat/2.png"/>
+  <file src="assets/genders/fem/textures/body/faces/lat/3.png"/>
+  <file src="assets/genders/fem/textures/body/faces/lat/4.png"/>
+  <file src="assets/genders/fem/textures/body/faces/lat/5.png"/>
+  <file src="assets/genders/fem/textures/body/faces/lat/6.png"/>
+  <file src="assets/genders/fem/textures/body/faces/lat/7.png"/>
+
+  <file src="assets/genders/fem/textures/body/faces/pak/1.png"/>
+  <file src="assets/genders/fem/textures/body/faces/pak/2.png"/>
+  <file src="assets/genders/fem/textures/body/faces/pak/3.png"/>
+  <file src="assets/genders/fem/textures/body/faces/pak/4.png"/>
+  <file src="assets/genders/fem/textures/body/faces/pak/5.png"/>
+
+  <file src="assets/genders/fem/textures/body/faces/whi/1.png"/>
+  <file src="assets/genders/fem/textures/body/faces/whi/2.png"/>
+  <file src="assets/genders/fem/textures/body/faces/whi/3.png"/>
+  <file src="assets/genders/fem/textures/body/faces/whi/4.png"/>
+  <file src="assets/genders/fem/textures/body/faces/whi/5.png"/>
+  <file src="assets/genders/fem/textures/body/faces/whi/6.png"/>
+  <file src="assets/genders/fem/textures/body/faces/whi/7.png"/>
+  <file src="assets/genders/fem/textures/body/faces/whi/8.png"/>
+  <file src="assets/genders/fem/textures/body/faces/whi/9.png"/>
+  <file src="assets/genders/fem/textures/body/faces/whi/10.png"/>
+  <file src="assets/genders/fem/textures/body/faces/whi/11.png"/>
+  <file src="assets/genders/fem/textures/body/faces/whi/12.png"/>
+
+
+
+  <file src="assets/genders/fem/textures/body/body/ara/feet.png"/>
+  <file src="assets/genders/fem/textures/body/body/ara/legs.png"/>
+  <file src="assets/genders/fem/textures/body/body/ara/torso.png"/>
+
+  <file src="assets/genders/fem/textures/body/body/bla/feet.png"/>
+  <file src="assets/genders/fem/textures/body/body/bla/legs.png"/>
+  <file src="assets/genders/fem/textures/body/body/bla/torso.png"/>
+
+  <file src="assets/genders/fem/textures/body/body/chi/feet.png"/>
+  <file src="assets/genders/fem/textures/body/body/chi/legs.png"/>
+  <file src="assets/genders/fem/textures/body/body/chi/torso.png"/>
+
+  <file src="assets/genders/fem/textures/body/body/lat/feet.png"/>
+  <file src="assets/genders/fem/textures/body/body/lat/legs.png"/>
+  <file src="assets/genders/fem/textures/body/body/lat/torso.png"/>
+
+  <file src="assets/genders/fem/textures/body/body/pak/feet.png"/>
+  <file src="assets/genders/fem/textures/body/body/pak/legs.png"/>
+  <file src="assets/genders/fem/textures/body/body/pak/torso.png"/>
+
+  <file src="assets/genders/fem/textures/body/body/whi/feet.png"/>
+  <file src="assets/genders/fem/textures/body/body/whi/legs.png"/>
+  <file src="assets/genders/fem/textures/body/body/whi/torso.png"/>
+
+
+
+  <file src="assets/genders/fem/textures/female_acess_1/1.png"/>
+  <file src="assets/genders/fem/textures/female_acess_2/1.png"/>
+  
+
+  <file src="assets/genders/fem/textures/female_tshirt_1/1.png"/>
+  <file src="assets/genders/fem/textures/female_tshirt_2/1.png"/>
+  <file src="assets/genders/fem/textures/female_tshirt_3/1.png"/>
+  <file src="assets/genders/fem/textures/female_tshirt_4/1.png"/>
+  <file src="assets/genders/fem/textures/female_tshirt_5/1.png"/>
+  <file src="assets/genders/fem/textures/female_tshirt_6/1.png"/>
+  <file src="assets/genders/fem/textures/female_tshirt_7/1.png"/>
+  <file src="assets/genders/fem/textures/female_tshirt_8/1.png"/>
+  <file src="assets/genders/fem/textures/female_tshirt_9/1.png"/>
+  <file src="assets/genders/fem/textures/female_tshirt_10/1.png"/>
+  <file src="assets/genders/fem/textures/female_tshirt_11/1.png"/>
+  <file src="assets/genders/fem/textures/female_tshirt_12/1.png"/>
+
+
+  <file src="assets/genders/fem/textures/female_pants_1/1.png"/>
+  <file src="assets/genders/fem/textures/female_pants_2/1.png"/>
+  <file src="assets/genders/fem/textures/female_pants_3/1.png"/>
+  <file src="assets/genders/fem/textures/female_pants_4/1.png"/>
+  <file src="assets/genders/fem/textures/female_pants_5/1.png"/>
+  <file src="assets/genders/fem/textures/female_pants_6/1.png"/>
+  <file src="assets/genders/fem/textures/female_pants_8/1.png"/>
+  <file src="assets/genders/fem/textures/female_pants_9/1.png"/>
+  <file src="assets/genders/fem/textures/female_pants_10/1.png"/>
+  
+
+  <file src="assets/genders/fem/textures/female_feet_1/1.png"/>
+  <file src="assets/genders/fem/textures/female_feet_2/1.png"/>
+  <file src="assets/genders/fem/textures/female_feet_3/1.png"/>
+  <file src="assets/genders/fem/textures/female_feet_4/1.png"/>
+  <file src="assets/genders/fem/textures/female_feet_5/1.png"/>
+  <file src="assets/genders/fem/textures/female_feet_6/1.png"/>
+  <file src="assets/genders/fem/textures/female_feet_7/1.png"/>
+  <file src="assets/genders/fem/textures/female_feet_8/1.png"/>
+  <file src="assets/genders/fem/textures/female_feet_9/1.png"/>
+  
+
+
+  <file src="assets/genders/fem/hair/sailor_hair_1.dff"/>
+  <file src="assets/genders/fem/hair/sailor_hair_1.txd"/>
+
+
+  
+
+
+  <file src="assets/props/foods.txd" />
+  <file src="assets/props/apple.col" />
+  <file src="assets/props/apple.dff" />
+  <file src="assets/props/burger.col" />
+  <file src="assets/props/burger.dff" />
+  <file src="assets/props/pizza.col" />
+  <file src="assets/props/pizza.dff" />
+  <file src="assets/props/sandwich.col" />
+  <file src="assets/props/sandwich.dff" />
+
+
+  <!-- male textures -->
+  <file src="assets/genders/male/mp_male_1.dff"/>
+  <file src="assets/genders/male/mp_male_2.dff"/>
+  <file src="assets/genders/male/mp_male_3.dff"/>
+  <file src="assets/genders/male/mp_male_4.dff"/>
+  <file src="assets/genders/male/mp_male_5.dff"/>
+  <file src="assets/genders/male/mp_male_6.dff"/>
+  <file src="assets/genders/male/mp_male_7.dff"/>
+  <file src="assets/genders/male/mp_male_8.dff"/>
+  <file src="assets/genders/male/mp_male_9.dff"/>
+  <file src="assets/genders/male/mp_male_10.dff"/>
+  <file src="assets/genders/male/mp_male_texture.txd"/>
+
+
+  <file src="assets/genders/male/textures/body/ara/feet.jpeg"/>
+  <file src="assets/genders/male/textures/body/ara/legs.jpeg"/>
+  <file src="assets/genders/male/textures/body/ara/torso.jpeg"/>
+
+  <file src="assets/genders/male/textures/body/bla/feet.jpeg"/>
+  <file src="assets/genders/male/textures/body/bla/legs.jpeg"/>
+  <file src="assets/genders/male/textures/body/bla/torso.jpeg"/>
+
+  <file src="assets/genders/male/textures/body/chi/feet.jpeg"/>
+  <file src="assets/genders/male/textures/body/chi/legs.jpeg"/>
+  <file src="assets/genders/male/textures/body/chi/torso.jpeg"/>
+
+  <file src="assets/genders/male/textures/body/lat/feet.jpeg"/>
+  <file src="assets/genders/male/textures/body/lat/legs.jpeg"/>
+  <file src="assets/genders/male/textures/body/lat/torso.jpeg"/>
+
+  <file src="assets/genders/male/textures/body/pak/feet.jpeg"/>
+  <file src="assets/genders/male/textures/body/pak/legs.jpeg"/>
+  <file src="assets/genders/male/textures/body/pak/torso.jpeg"/>
+
+
+  <file src="assets/genders/male/textures/body/whi/feet.jpeg"/>
+  <file src="assets/genders/male/textures/body/whi/legs.jpeg"/>
+  <file src="assets/genders/male/textures/body/whi/torso.jpeg"/>
+
+
+  <file src="assets/genders/male/textures/faces/ara/1.png"/>
+  <file src="assets/genders/male/textures/faces/ara/2.png"/>
+  <file src="assets/genders/male/textures/faces/ara/3.png"/>
+  <file src="assets/genders/male/textures/faces/ara/4.png"/>
+  <file src="assets/genders/male/textures/faces/ara/5.png"/>
+  <file src="assets/genders/male/textures/faces/ara/6.png"/>
+
+  <file src="assets/genders/male/textures/faces/bla/1.png"/>
+  <file src="assets/genders/male/textures/faces/bla/2.png"/>
+  <file src="assets/genders/male/textures/faces/bla/3.png"/>
+  <file src="assets/genders/male/textures/faces/bla/4.png"/>
+  <file src="assets/genders/male/textures/faces/bla/5.png"/>
+  <file src="assets/genders/male/textures/faces/bla/6.png"/>
+  <file src="assets/genders/male/textures/faces/bla/7.png"/>
+  <file src="assets/genders/male/textures/faces/bla/8.png"/>
+  
+  <file src="assets/genders/male/textures/faces/chi/1.png"/>
+  <file src="assets/genders/male/textures/faces/chi/2.png"/>
+  <file src="assets/genders/male/textures/faces/chi/3.png"/>
+  <file src="assets/genders/male/textures/faces/chi/4.png"/>
+  <file src="assets/genders/male/textures/faces/chi/5.png"/>
+  <file src="assets/genders/male/textures/faces/chi/6.png"/>
+  <file src="assets/genders/male/textures/faces/chi/7.png"/>
+  <file src="assets/genders/male/textures/faces/chi/8.png"/>
+  
+  <file src="assets/genders/male/textures/faces/lat/1.png"/>
+  <file src="assets/genders/male/textures/faces/lat/2.png"/>
+  <file src="assets/genders/male/textures/faces/lat/3.png"/>
+  <file src="assets/genders/male/textures/faces/lat/4.png"/>
+  <file src="assets/genders/male/textures/faces/lat/5.png"/>
+  <file src="assets/genders/male/textures/faces/lat/6.png"/>
+  <file src="assets/genders/male/textures/faces/lat/7.png"/>
+
+  <file src="assets/genders/male/textures/faces/pak/1.png"/>
+  <file src="assets/genders/male/textures/faces/pak/2.png"/>
+  <file src="assets/genders/male/textures/faces/pak/3.png"/>
+  <file src="assets/genders/male/textures/faces/pak/4.png"/>
+  <file src="assets/genders/male/textures/faces/pak/5.png"/>
+
+  <file src="assets/genders/male/textures/faces/whi/1.png"/>
+  <file src="assets/genders/male/textures/faces/whi/2.png"/>
+  <file src="assets/genders/male/textures/faces/whi/3.png"/>
+  <file src="assets/genders/male/textures/faces/whi/4.png"/>
+  <file src="assets/genders/male/textures/faces/whi/5.png"/>
+  <file src="assets/genders/male/textures/faces/whi/6.png"/>
+  <file src="assets/genders/male/textures/faces/whi/7.png"/>
+  <file src="assets/genders/male/textures/faces/whi/8.png"/>
+  <file src="assets/genders/male/textures/faces/whi/9.png"/>
+  <file src="assets/genders/male/textures/faces/whi/10.png"/>
+  <file src="assets/genders/male/textures/faces/whi/11.png"/>
+  <file src="assets/genders/male/textures/faces/whi/12.png"/>
+
+
+  <file src="assets/genders/male/textures/male_tshirt_1/1.png"/>
+  <file src="assets/genders/male/textures/male_tshirt_2/1.png"/>
+  <file src="assets/genders/male/textures/male_tshirt_3/1.png"/>
+  <file src="assets/genders/male/textures/male_tshirt_4/1.png"/>
+  <file src="assets/genders/male/textures/male_tshirt_5/1.png"/>
+  <file src="assets/genders/male/textures/male_tshirt_6/1.png"/>
+  <file src="assets/genders/male/textures/male_tshirt_7/1.png"/>
+  <file src="assets/genders/male/textures/male_tshirt_8/1.png"/>
+  <file src="assets/genders/male/textures/male_tshirt_9/1.png"/>
+  <file src="assets/genders/male/textures/male_tshirt_10/1.png"/>
+  <file src="assets/genders/male/textures/male_tshirt_11/1.png"/>
+  <file src="assets/genders/male/textures/male_tshirt_12/1.png"/>
+  
+
+  <file src="assets/genders/male/textures/male_pants_1/1.png"/>
+  <file src="assets/genders/male/textures/male_pants_2/1.png"/>
+  <file src="assets/genders/male/textures/male_pants_3/1.png"/>
+  <file src="assets/genders/male/textures/male_pants_4/1.png"/>
+  <file src="assets/genders/male/textures/male_pants_5/1.png"/>
+  <file src="assets/genders/male/textures/male_pants_6/1.png"/>
+  <file src="assets/genders/male/textures/male_pants_7/1.png"/>
+  <file src="assets/genders/male/textures/male_pants_8/1.png"/>
+
+  <file src="assets/genders/male/textures/male_feet_1/1.png"/>
+  <file src="assets/genders/male/textures/male_feet_2/1.png"/>
+  <file src="assets/genders/male/textures/male_feet_3/1.png"/>
+  <file src="assets/genders/male/textures/male_feet_4/1.png"/>
+  <file src="assets/genders/male/textures/male_feet_5/1.png"/>
+  <file src="assets/genders/male/textures/male_feet_6/1.png"/>
+  <file src="assets/genders/male/textures/male_feet_7/1.png"/>
+  <file src="assets/genders/male/textures/male_feet_8/1.png"/>
+
+  <file src="assets/genders/male/textures/male_upper_1/1.png"/>
+
+  <html src="assets/genders/icons/icon_feet_1.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_feet_2.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_feet_3.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_feet_4.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_feet_5.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_feet_6.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_feet_7.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_feet_8.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_female_acess_1.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_female_acess_2.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_female_backpack_1.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_female_feet_9.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_female_pants_1.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_female_pants_10.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_female_pants_2.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_female_pants_3.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_female_pants_4.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_female_pants_5.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_female_pants_6.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_female_pants_8.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_female_pants_9.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_female_tshirt_1.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_female_tshirt_10.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_female_tshirt_11.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_female_tshirt_12.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_female_tshirt_2.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_female_tshirt_3.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_female_tshirt_4.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_female_tshirt_5.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_female_tshirt_6.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_female_tshirt_7.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_female_tshirt_8.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_female_tshirt_9.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_acess_2.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_backpack_1.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_feet_1.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_feet_2.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_feet_3.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_feet_4.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_feet_5.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_feet_6.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_feet_7.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_feet_8.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_pants_1.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_pants_2.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_pants_3.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_pants_4.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_pants_5.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_pants_6.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_pants_7.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_pants_8.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_tshirt_1.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_tshirt_10.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_tshirt_11.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_tshirt_12.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_tshirt_2.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_tshirt_3.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_tshirt_4.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_tshirt_5.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_tshirt_6.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_tshirt_7.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_tshirt_8.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_tshirt_9.png" default="false" raw="true"/>
+  <html src="assets/genders/icons/icon_male_upper_1.png" default="false" raw="true"/>
+
+  <html src="assets/genders/icons/icon_unknown.png" default="false" raw="true"/>
+</meta>

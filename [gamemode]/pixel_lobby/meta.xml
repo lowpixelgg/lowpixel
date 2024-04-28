@@ -1,0 +1,218 @@
+<meta>
+    <info author="lowpixel.gg" version="1.0" />
+
+
+    <!-- shared -->
+    <script src="dreamcore.lua" type="shared" cache="false" />
+
+    <!-- utils -->
+    <script src="utils/utilities.lua" type="shared" cache="false" />
+    <script src="utils/responsive.lua" type="client" cache="false" />
+    <script src="utils/yaci.lua" type="client" cache="false" />
+
+    <!-- infra -->
+    <script src="infra/events/network.lua" type="shared" cache="false" />
+    <script src="infra/events/client/refresh.lua" type="client" cache="false" />
+    <script src="infra/events/server/refresh.lua" type="server" cache="false" />
+
+    <script src="infra/factories/server/makeLobbyFactory.lua" type="server" />
+
+    <script src="infra/api/server/exports.lua" type="server" cache="false" />
+
+    <!-- ui -->
+    <script src="client/interface/SelectorComponent.lua" type="client" cache="false" />
+
+
+    <!-- client -->
+    <script src="client/creator.lua" type="client" cache="false" />
+    <script src="client/main.lua" type="client" cache="false" />
+    <script src="client/interface/main.lua" type="client" cache="false" />
+    <script src="client/player.lua" type="client" cache="false" />
+    <script src="client/peds.lua" type="client" />
+
+
+    <file src="assets/html/webui.html"/>
+    <file src="assets/html/styles.css"/>
+    <file src="assets/html/assets/avatar.gif"/>
+    <file src="assets/html/assets/bell.svg"/>
+    <file src="assets/html/assets/date.svg"/>
+    <file src="assets/html/assets/search.svg"/>
+    <file src="assets/html/assets/hand.gif"/>
+    <file src="assets/html/assets/pascoa.png"/>
+    <file src="assets/html/assets/logo.png"/>
+    <file src="assets/html/assets/more.svg"/>
+    <file src="assets/html/assets/seta.svg"/>
+    <file src="assets/html/assets/fonts/exo2/Exo2-SemiBold.woff"/>
+    <file src="assets/html/assets/fonts/exo2/Exo2-SemiBold.woff2"/>
+    <file src="assets/html/assets/fonts/roboto/Roboto-Regular.woff"/>
+    <file src="assets/html/assets/fonts/roboto/Roboto-Regular.woff2"/>
+    <file src="assets/html/assets/fonts/poppins/Poppins-SemiBold.woff"/>
+    <file src="assets/html/assets/fonts/poppins/Poppins-SemiBold.woff2"/>
+    <file src="assets/html/assets/fonts/inconsolata/Inconsolata-Medium.woff"/>
+    <file src="assets/html/assets/fonts/inconsolata/Inconsolata-Medium.woff2"/>
+
+
+    <file src="assets/creator/index.html"/>
+    <file src="assets/creator/assets/index.css"/>
+    <file src="assets/creator/assets/index.js"/>
+
+    <file src="assets/creator/src/assets/clotes/coat_bape.png"/>
+    <file src="assets/creator/src/assets/clotes/shapesBg.png"/>
+    <file src="assets/creator/src/assets/clotes/tshirt_bape.png"/>
+
+    <file src="assets/creator/src/assets/avatar.png"/>
+    <file src="assets/creator/src/assets/idBackg.png"/>
+
+    <file src="assets/creator/src/assets/icons/HexVector.png"/>
+    <file src="assets/creator/src/assets/icons/HexVector1.png"/>
+
+    <file src="assets/creator/src/assets/icons/skin1.png"/>
+    <file src="assets/creator/src/assets/icons/skin2.png"/>
+    <file src="assets/creator/src/assets/icons/skin3.png"/>
+    <file src="assets/creator/src/assets/icons/skin4.png"/>
+    <file src="assets/creator/src/assets/icons/skin5.png"/>
+    <file src="assets/creator/src/assets/icons/skin6.png"/>
+    <file src="assets/creator/src/assets/icons/skin7.png"/>
+    <file src="assets/creator/src/assets/icons/skin8.png"/>
+    <file src="assets/creator/src/assets/icons/skin9.png"/>
+    <file src="assets/creator/src/assets/icons/skin10.png"/>
+
+    <file src="assets/creator/src/assets/parents/Adrian.png"/>
+    <file src="assets/creator/src/assets/parents/Alex.png"/>
+    <file src="assets/creator/src/assets/parents/Amelia.png"/>
+    <file src="assets/creator/src/assets/parents/Andrew.png"/>
+    <file src="assets/creator/src/assets/parents/Angel.png"/>
+    <file src="assets/creator/src/assets/parents/Anthony.png"/>
+    <file src="assets/creator/src/assets/parents/Ashley.png"/>
+    <file src="assets/creator/src/assets/parents/Audrey.png"/>
+    <file src="assets/creator/src/assets/parents/Ava.png"/>
+    <file src="assets/creator/src/assets/parents/Benjamin.png"/>
+    <file src="assets/creator/src/assets/parents/Brianna.png"/>
+    <file src="assets/creator/src/assets/parents/Camila.png"/>
+    <file src="assets/creator/src/assets/parents/Charlotte.png"/>
+    <file src="assets/creator/src/assets/parents/Claude.png"/>
+    <file src="assets/creator/src/assets/parents/Daniel.png"/>
+    <file src="assets/creator/src/assets/parents/Diego.png"/>
+    <file src="assets/creator/src/assets/parents/Elizabeth.png"/>
+    <file src="assets/creator/src/assets/parents/Emma.png"/>
+    <file src="assets/creator/src/assets/parents/Ethan.png"/>
+    <file src="assets/creator/src/assets/parents/Evan.png"/>
+    <file src="assets/creator/src/assets/parents/Evelyn.png"/>
+    <file src="assets/creator/src/assets/parents/Gabriel.png"/>
+    <file src="assets/creator/src/assets/parents/Giselle.png"/>
+    <file src="assets/creator/src/assets/parents/Grace.png"/>
+    <file src="assets/creator/src/assets/parents/Hannah.png"/>
+    <file src="assets/creator/src/assets/parents/Isaac.png"/>
+    <file src="assets/creator/src/assets/parents/Isabella.png"/>
+    <file src="assets/creator/src/assets/parents/Jasmine.png"/>
+    <file src="assets/creator/src/assets/parents/John.png"/>
+    <file src="assets/creator/src/assets/parents/Joshua.png"/>
+    <file src="assets/creator/src/assets/parents/Juan.png"/>
+    <file src="assets/creator/src/assets/parents/Kevin.png"/>
+    <file src="assets/creator/src/assets/parents/Louis.png"/>
+    <file src="assets/creator/src/assets/parents/Michael.png"/>
+    <file src="assets/creator/src/assets/parents/Misty.png"/>
+    <file src="assets/creator/src/assets/parents/Natalie.png"/>
+    <file src="assets/creator/src/assets/parents/Nicole.png"/>
+    <file src="assets/creator/src/assets/parents/Niko.png"/>
+    <file src="assets/creator/src/assets/parents/Noah.png"/>
+    <file src="assets/creator/src/assets/parents/Olivia.png"/>
+    <file src="assets/creator/src/assets/parents/Samuel.png"/>
+    <file src="assets/creator/src/assets/parents/Santiago.png"/>
+    <file src="assets/creator/src/assets/parents/Sophia.png"/>
+    <file src="assets/creator/src/assets/parents/Vincent.png"/>
+    <file src="assets/creator/src/assets/parents/Violet.png"/>
+    <file src="assets/creator/src/assets/parents/Zoe.png"/>
+
+    <file src="assets/creator/src/assets/clothe_icons/icon_feet_1.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_feet_2.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_feet_3.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_feet_4.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_feet_5.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_feet_6.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_feet_7.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_feet_8.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_female_acess_1.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_female_acess_2.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_female_backpack_1.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_female_feet_9.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_female_pants_1.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_female_pants_10.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_female_pants_2.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_female_pants_3.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_female_pants_4.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_female_pants_5.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_female_pants_6.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_female_pants_8.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_female_pants_9.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_female_tshirt_1.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_female_tshirt_10.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_female_tshirt_11.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_female_tshirt_12.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_female_tshirt_2.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_female_tshirt_3.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_female_tshirt_4.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_female_tshirt_5.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_female_tshirt_6.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_female_tshirt_7.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_female_tshirt_8.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_female_tshirt_9.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_acess_2.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_backpack_1.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_feet_1.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_feet_2.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_feet_3.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_feet_4.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_feet_5.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_feet_6.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_feet_7.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_feet_8.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_pants_1.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_pants_2.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_pants_3.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_pants_4.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_pants_5.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_pants_6.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_pants_7.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_pants_8.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_tshirt_1.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_tshirt_10.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_tshirt_11.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_tshirt_12.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_tshirt_2.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_tshirt_3.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_tshirt_4.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_tshirt_5.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_tshirt_6.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_tshirt_7.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_tshirt_8.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_tshirt_9.png" />
+    <file src="assets/creator/src/assets/clothe_icons/icon_male_upper_1.png" />
+
+    <file src="assets/creator/src/assets/clothe_icons/icon_unknown.png" />
+    
+
+    <file src="assets/icons/dot.png"/>
+    <file src="assets/icons/circle.png"/>
+    <file src="assets/icons/frame.png"/>
+    <file src="assets/icons/arrow.png"/>
+
+    <file src="assets/sounds/1.mp3"/>
+    <file src="assets/sounds/2.mp3"/>
+    <file src="assets/sounds/3.mp3"/>
+    <file src="assets/sounds/4.mp3"/>
+    <file src="assets/sounds/5.mp3"/>
+
+    <file src="assets/ifp/cutscenes.ifp" />
+    <file src="assets/ifp/clothingshoes.ifp"/>
+    <file src="assets/ifp/clothingshirt.ifp"/>
+    <file src="assets/ifp/gta5.ifp"/>
+
+    <file src="assets/plate/placa_id.dff"/>
+    <file src="assets/plate/placa_id.col"/>
+    <file src="assets/plate/placa_id.txd"/>
+    <file src="assets/plate/bg.png"/>
+
+    <export function="handshakeJoin" type="server" http="false"/>
+    <export function="handshakeLeave" type="server" http="false"/>
+</meta>

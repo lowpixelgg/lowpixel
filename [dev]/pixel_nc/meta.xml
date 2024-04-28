@@ -1,0 +1,18 @@
+<meta>
+    <script src="freecam.lua" type="client" />
+    <script src="freecam_server.lua" type="server" />
+
+    <export function="setPlayerFreecamEnabled" />
+    <export function="setPlayerFreecamDisabled" />
+    <export function="isPlayerFreecamEnabled" />
+    <export function="setPlayerFreecamOption" />
+
+    <export function="setFreecamEnabled" type="client" />
+    <export function="setFreecamDisabled" type="client" />
+    <export function="isFreecamEnabled" type="client" />
+    <export function="setFreecamOption" type="client" />
+    <export function="getFreecamOption" type="client" />
+    <export function="getFreecamVelocity" type="client" />
+
+    <min_mta_version client="1.5.9" server="1.5.9" />
+</meta>

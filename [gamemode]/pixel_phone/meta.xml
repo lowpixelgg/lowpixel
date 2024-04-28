@@ -1,0 +1,209 @@
+<meta>
+    <info author="FLASHII" />
+
+    <script src="dreamcore.lua" type="shared" cache="false" />
+    <script src="utils/responsive.lua" type="client" cache="false" />
+    <script src="utils/utilities.lua" type="shared" cache="false" />
+    <script src="utils/yaci.lua" type="client" cache="false" />
+    <script src="infra/network.lua" type="shared" cache="false" />
+
+
+    <!-- server -->
+    <script src="server/core/bank.lua" type="server" cache="false" />
+    <script src="server/core/whatsapp.lua" type="server" cache="false" />
+    <script src="server/core/phone.lua" type="server" cache="false" />
+    <script src="server/core/hotspot.lua" type="server" cache="false" />
+
+    <script src="server/factories/makeServerFactory.lua" type="server" cache="false" />
+    <script src="server/factories/makeServerHotspotsFactory.lua" type="server" cache="false"/>
+    <script src="server/factories/makeServerWhatsAppFactory.lua" type="server" cache="false" />
+    <script src="server/factories/makeServerBankFactory.lua" type="server" cache="false" />
+
+    <script src="server/events/refresh.lua" type="server" cache="false" />
+
+    <!-- client -->
+    <script src="client/gui/main.lua" type="client" cache="false" />
+    <script src="client/gui/camera.lua" type="client" cache="false" />
+
+    <script src="client/factories/makeClientFactory.lua" type="client" cache="false" />
+    <script src="client/factories/makeClientWhatsAppFactory.lua" type="client" cache="false" />
+    <script src="client/factories/makeClientBankFactory.lua" type="client" cache="false" />
+
+    <script src="client/events/refresh.lua" type="client" cache="false" />
+
+
+
+
+
+    <!-- files -->
+    <file src="assets/webui/index.html"/>
+    <file src="assets/webui/app.js"/>
+    <file src="assets/webui/src/assets/addIcon.svg" />
+    <file src="assets/webui/src/assets/audioExample.mp3" />
+    <file src="assets/webui/src/assets/background1.png" />
+    <file src="assets/webui/src/assets/Bank-BlackCard.png" />
+    <file src="assets/webui/src/assets/Bank-cardIcon.png" />
+    <file src="assets/webui/src/assets/bank-confirmPayImg.svg" />
+    <file src="assets/webui/src/assets/Bank-illustration1.png" />
+    <file src="assets/webui/src/assets/Bank-keyImg.png" />
+    <file src="assets/webui/src/assets/Bank-loanIcon.png" />
+    <file src="assets/webui/src/assets/Bank-logoTransparent.png" />
+    <file src="assets/webui/src/assets/Bank-pixHand.png" />
+    <file src="assets/webui/src/assets/Bank-pixIcon.png" />
+    <file src="assets/webui/src/assets/Bank-reviewImg.png" />
+    <file src="assets/webui/src/assets/Bank-secureImg.png" />
+    <file src="assets/webui/src/assets/BankIcon.png" />
+    <file src="assets/webui/src/assets/CalculatorIcon.png" />
+    <file src="assets/webui/src/assets/CameraIcon.png" />
+    <file src="assets/webui/src/assets/frame.png" />
+    <file src="assets/webui/src/assets/homeBg.png" />
+    <file src="assets/webui/src/assets/homeBg2.png" />
+    <file src="assets/webui/src/assets/homeBg3.png" />
+    <file src="assets/webui/src/assets/homeBg4.png" />
+    <file src="assets/webui/src/assets/InstagramBrand.png" />
+    <file src="assets/webui/src/assets/InstagramIcon.png" />
+    <file src="assets/webui/src/assets/InstagramLogo.png" />
+    <file src="assets/webui/src/assets/InternetIcon.png" />
+    <file src="assets/webui/src/assets/MessagesIcon.png" />
+    <file src="assets/webui/src/assets/move.png" />
+    <file src="assets/webui/src/assets/NotesIcon.png" />
+    <file src="assets/webui/src/assets/PhoneIcon.png" />
+    <file src="assets/webui/src/assets/PlayStoreIcon.png" />
+    <file src="assets/webui/src/assets/react.svg" />
+    <file src="assets/webui/src/assets/rocketGreen.png" />
+    <file src="assets/webui/src/assets/samsungA50.png" />
+    <file src="assets/webui/src/assets/SettingsIcon.png" />
+    <file src="assets/webui/src/assets/WhatsIcon.png" />
+    <file src="assets/webui/src/assets/whatsLogo.svg" />
+    <file src="assets/webui/src/assets/Wi-FiIcon.png" />
+    <file src="assets/webui/src/assets/whatsbg.svg" />
+    
+    <file src="assets/webui/src/assets/Images/placeholder1.png" />
+    <file src="assets/webui/src/assets/Images/placeholder2.png" />
+    <file src="assets/webui/src/assets/Images/placeholder3.png" />
+    <file src="assets/webui/src/assets/Images/placeholder4.png" />
+    <file src="assets/webui/src/assets/Images/placeholder5.png" />
+    <file src="assets/webui/src/assets/Images/placeholder6.png" />
+    <file src="assets/webui/src/assets/Images/placeholder7.png" />
+    <file src="assets/webui/src/assets/Images/placeholder8.png" />
+
+    <file src="assets/webui/src/assets/Avatars/non.png" />
+    <file src="assets/webui/src/assets/Avatars/0.png" />
+    <file src="assets/webui/src/assets/Avatars/1.png" />
+    <file src="assets/webui/src/assets/Avatars/10.png" />
+    <file src="assets/webui/src/assets/Avatars/100.png" />
+    <file src="assets/webui/src/assets/Avatars/102.png" />
+    <file src="assets/webui/src/assets/Avatars/103.png" />
+    <file src="assets/webui/src/assets/Avatars/104.png" />
+    <file src="assets/webui/src/assets/Avatars/105.png" />
+    <file src="assets/webui/src/assets/Avatars/106.png" />
+    <file src="assets/webui/src/assets/Avatars/107.png" />
+    <file src="assets/webui/src/assets/Avatars/108.png" />
+    <file src="assets/webui/src/assets/Avatars/109.png" />
+    <file src="assets/webui/src/assets/Avatars/11.png" />
+    <file src="assets/webui/src/assets/Avatars/110.png" />
+    <file src="assets/webui/src/assets/Avatars/111.png" />
+    <file src="assets/webui/src/assets/Avatars/112.png" />
+    <file src="assets/webui/src/assets/Avatars/113.png" />
+    <file src="assets/webui/src/assets/Avatars/114.png" />
+    <file src="assets/webui/src/assets/Avatars/115.png" />
+    <file src="assets/webui/src/assets/Avatars/116.png" />
+    <file src="assets/webui/src/assets/Avatars/117.png" />
+    <file src="assets/webui/src/assets/Avatars/118.png" />
+    <file src="assets/webui/src/assets/Avatars/12.png" />
+    <file src="assets/webui/src/assets/Avatars/13.png" />
+    <file src="assets/webui/src/assets/Avatars/14.png" />
+    <file src="assets/webui/src/assets/Avatars/15.png" />
+    <file src="assets/webui/src/assets/Avatars/16.png" />
+    <file src="assets/webui/src/assets/Avatars/17.png" />
+    <file src="assets/webui/src/assets/Avatars/18.png" />
+    <file src="assets/webui/src/assets/Avatars/19.png" />
+    <file src="assets/webui/src/assets/Avatars/2.png" />
+    <file src="assets/webui/src/assets/Avatars/20.png" />
+    <file src="assets/webui/src/assets/Avatars/21.png" />
+    <file src="assets/webui/src/assets/Avatars/22.png" />
+    <file src="assets/webui/src/assets/Avatars/23.png" />
+    <file src="assets/webui/src/assets/Avatars/24.png" />
+    <file src="assets/webui/src/assets/Avatars/25.png" />
+    <file src="assets/webui/src/assets/Avatars/26.png" />
+    <file src="assets/webui/src/assets/Avatars/27.png" />
+    <file src="assets/webui/src/assets/Avatars/28.png" />
+    <file src="assets/webui/src/assets/Avatars/29.png" />
+    <file src="assets/webui/src/assets/Avatars/3.png" />
+    <file src="assets/webui/src/assets/Avatars/30.png" />
+    <file src="assets/webui/src/assets/Avatars/31.png" />
+    <file src="assets/webui/src/assets/Avatars/32.png" />
+    <file src="assets/webui/src/assets/Avatars/33.png" />
+    <file src="assets/webui/src/assets/Avatars/34.png" />
+    <file src="assets/webui/src/assets/Avatars/35.png" />
+    <file src="assets/webui/src/assets/Avatars/36.png" />
+    <file src="assets/webui/src/assets/Avatars/37.png" />
+    <file src="assets/webui/src/assets/Avatars/38.png" />
+    <file src="assets/webui/src/assets/Avatars/39.png" />
+    <file src="assets/webui/src/assets/Avatars/4.png" />
+    <file src="assets/webui/src/assets/Avatars/40.png" />
+    <file src="assets/webui/src/assets/Avatars/41.png" />
+    <file src="assets/webui/src/assets/Avatars/42.png" />
+    <file src="assets/webui/src/assets/Avatars/43.png" />
+    <file src="assets/webui/src/assets/Avatars/44.png" />
+    <file src="assets/webui/src/assets/Avatars/45.png" />
+    <file src="assets/webui/src/assets/Avatars/46.png" />
+    <file src="assets/webui/src/assets/Avatars/47.png" />
+    <file src="assets/webui/src/assets/Avatars/48.png" />
+    <file src="assets/webui/src/assets/Avatars/49.png" />
+    <file src="assets/webui/src/assets/Avatars/5.png" />
+    <file src="assets/webui/src/assets/Avatars/50.png" />
+    <file src="assets/webui/src/assets/Avatars/51.png" />
+    <file src="assets/webui/src/assets/Avatars/52.png" />
+    <file src="assets/webui/src/assets/Avatars/53.png" />
+    <file src="assets/webui/src/assets/Avatars/54.png" />
+    <file src="assets/webui/src/assets/Avatars/55.png" />
+    <file src="assets/webui/src/assets/Avatars/56.png" />
+    <file src="assets/webui/src/assets/Avatars/57.png" />
+    <file src="assets/webui/src/assets/Avatars/58.png" />
+    <file src="assets/webui/src/assets/Avatars/59.png" />
+    <file src="assets/webui/src/assets/Avatars/6.png" />
+    <file src="assets/webui/src/assets/Avatars/60.png" />
+    <file src="assets/webui/src/assets/Avatars/61.png" />
+    <file src="assets/webui/src/assets/Avatars/62.png" />
+    <file src="assets/webui/src/assets/Avatars/63.png" />
+    <file src="assets/webui/src/assets/Avatars/64.png" />
+    <file src="assets/webui/src/assets/Avatars/65.png" />
+    <file src="assets/webui/src/assets/Avatars/66.png" />
+    <file src="assets/webui/src/assets/Avatars/67.png" />
+    <file src="assets/webui/src/assets/Avatars/68.png" />
+    <file src="assets/webui/src/assets/Avatars/69.png" />
+    <file src="assets/webui/src/assets/Avatars/7.png" />
+    <file src="assets/webui/src/assets/Avatars/70.png" />
+    <file src="assets/webui/src/assets/Avatars/71.png" />
+    <file src="assets/webui/src/assets/Avatars/72.png" />
+    <file src="assets/webui/src/assets/Avatars/73.png" />
+    <file src="assets/webui/src/assets/Avatars/74.png" />
+    <file src="assets/webui/src/assets/Avatars/75.png" />
+    <file src="assets/webui/src/assets/Avatars/76.png" />
+    <file src="assets/webui/src/assets/Avatars/77.png" />
+    <file src="assets/webui/src/assets/Avatars/78.png" />
+    <file src="assets/webui/src/assets/Avatars/79.png" />
+    <file src="assets/webui/src/assets/Avatars/8.png" />
+    <file src="assets/webui/src/assets/Avatars/80.png" />
+    <file src="assets/webui/src/assets/Avatars/81.png" />
+    <file src="assets/webui/src/assets/Avatars/82.png" />
+    <file src="assets/webui/src/assets/Avatars/83.png" />
+    <file src="assets/webui/src/assets/Avatars/84.png" />
+    <file src="assets/webui/src/assets/Avatars/85.png" />
+    <file src="assets/webui/src/assets/Avatars/86.png" />
+    <file src="assets/webui/src/assets/Avatars/87.png" />
+    <file src="assets/webui/src/assets/Avatars/88.png" />
+    <file src="assets/webui/src/assets/Avatars/89.png" />
+    <file src="assets/webui/src/assets/Avatars/9.png" />
+    <file src="assets/webui/src/assets/Avatars/90.png" />
+    <file src="assets/webui/src/assets/Avatars/91.png" />
+    <file src="assets/webui/src/assets/Avatars/92.png" />
+    <file src="assets/webui/src/assets/Avatars/93.png" />
+    <file src="assets/webui/src/assets/Avatars/94.png" />
+    <file src="assets/webui/src/assets/Avatars/95.png" />
+    <file src="assets/webui/src/assets/Avatars/96.png" />
+    <file src="assets/webui/src/assets/Avatars/97.png" />
+    <file src="assets/webui/src/assets/Avatars/98.png" />
+    <file src="assets/webui/src/assets/Avatars/99.png" />
+</meta>

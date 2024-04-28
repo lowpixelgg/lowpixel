@@ -1,0 +1,45 @@
+<meta>
+    <info author="lowpixel.gg" version="1.0" />
+    <min_mta_version client="1.5.8-9.20979"></min_mta_version>
+    
+    <script src="dreamcore.lua" type="client" cache="false" />
+    
+    
+    <script src="utils/instant.lua" type="client" cache="false" />
+    <script src="utils/utilities.lua" type="client" cache="false" />
+    
+    <script src="core/svgCreator.lua" type="client" cache="false" />
+    <script src="core/renderTarget3D.lua" type="client" cache="false" />
+    <script src="core/layoutBox.lua" type="client" cache="false" />
+    <script src="core/responsive.lua" type="client" cache="false" />
+    <script src="core/design.lua" type="client" cache="false" />
+    
+    
+    <script src="infra/factories/makeClientFactory.lua" type="client" cache="false" />
+    <script src="infra/events/refresh.lua" type="client" cache="false" />
+    
+    
+    <script src="infra/api/exports.lua" type="client" cache="false" />
+    
+    
+    <export function="createSvg" type="client" />
+    <export function="setSvgColor" type="client" />
+    <export function="renderSvg" type="client" />
+    <export function="getSvgRectWidth" type="client" />
+    <export function="setSvgRectWidth" type="client" />
+    <export function="setSvgRectHeight" type="client" />
+    <export function="setSvgOffset" type="client" />
+    <export function="setSvgStrokeColor" type="client" />
+    
+    <export function="create3DRT" type="client" />
+    <export function="set3DRT" type="client" />
+    <export function="drawRT3D" type="client" />
+    <export function="setRT3DTransform" type="client" />
+    
+    <export function="createLayoutBox" type="client" />
+    <export function="getScaleFactor" type="client" />
+    <export function="isMouseInPosition" type="client" />
+    
+    
+    <export function="toggleCursor" type="client" />
+</meta>

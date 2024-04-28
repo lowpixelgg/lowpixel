@@ -1,0 +1,6 @@
+<meta>
+    <script src="utils.lua" type="client" cache="false" />
+    <script src="c.lua" type="client" cache="false"/>
+
+    <file src="rec.png"/>
+</meta>

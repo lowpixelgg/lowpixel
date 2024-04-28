@@ -1,0 +1,28 @@
+<meta>
+	<info name="custom_markers" author="TheTroll" version="1.0" type="script"></info>
+
+	<script src="dreamcore.lua" type="shared" cache="false" />
+
+    <script src="markers_c.lua" type="client" ></script>
+	<script src="markers_s.lua" type="server"></script>
+	<script src="markers_render.lua" type="client" cache="false"></script>
+	
+	<file src="img/arrow.png"/>
+	<file src="img/light.png"/>
+
+	<file src="img/ground.png" />
+	<file src="img/light_ground_a.png" />
+	<file src="img/light_ground_b.png" />	
+	<file src="img/garage_text.png" />
+
+
+
+	<export function="createCustomMarker" type="server"/>
+	<export function="createRectangleMarker" type="shared" />
+
+	<file src="assets/cube.txd" />
+	<file src="assets/cube.dff" />
+	<file src="assets/cube.col" />
+
+	<file src="assets/fx.fx" />
+</meta>

@@ -1,0 +1,30 @@
+<meta>
+    <info author="flashii" version="1.0" />
+    <min_mta_version client="1.5.7-9.20447"></min_mta_version>
+    
+    <script src="dreamcore.lua" type="shared" cache="false" />
+    
+    <script src="utils/yaci.lua" type="shared" cache="false" />
+    <script src="utils/responsive.lua" type="client" cache="false" />
+    <script src="utils/utilities.lua" type="client" cache="false" />
+    <script src="utils/svg.lua" type="client" cache="false" />
+    
+    
+    <script src="client/gui/design.lua" type="client" cache="false" />
+    <script src="client/gui/main.lua" type="client" cache="false" />
+    <script src="client/factories/makeClientFactory.lua" type="client" cache="false" />
+    <script src="client/events/refresh.lua" type="client" cache="false" />
+    
+    <script src="infra/events/network.lua" type="shared" cache="false" />
+    
+    <script src="server/events/refresh.lua" type="server" cache="false" />
+    <script src="server/factories/makeServerFactory.lua" type="server" cache="false" />
+    
+    
+    <export function="fallPlayer" type="server" />
+    
+    <file src="assets/bg.png" />
+    <file src="assets/stripes.png" />
+    <file src="assets/heartbeat.png" />
+    <file src="assets/fx/blackwhite.fx" />
+</meta>

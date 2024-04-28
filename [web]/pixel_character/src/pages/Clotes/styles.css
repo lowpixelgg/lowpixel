@@ -1,0 +1,116 @@
+.clotesContainer {
+  width: 360px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.clotesContainer .col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.clotesContainer .col label {
+  color: #f8f9fa;
+  font-size: 0.75rem;
+}
+
+.clotesContainer .blockList {
+  margin: -8px;
+}
+
+.clotesContainer .listWrap {
+  width: 100%;
+  height: 60vh;
+  min-height: 520px;
+  max-height: 680px;
+  padding: 8px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 2px;
+  position: relative;
+}
+
+.clotesContainer .listWrap::after {
+  content: "";
+  width: 100%;
+  height: 25%;
+}
+
+.clotesContainer .listWrap::-webkit-scrollbar {
+  width: 4px;
+}
+
+.clotesContainer .listWrap::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+}
+
+.clotesContainer .listWrap::-webkit-scrollbar-thumb {
+  background: #c8272c;
+  border-radius: 4px;
+}
+
+.clotesContainer .listWrap .listItem {
+  width: calc(33% - 2px);
+  max-height: calc(33% - 8px);
+  padding: 4px 4px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4px;
+  align-items: center;
+  background: rgba(0, 18, 25, 0.2);
+  border-radius: 2px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.clotesContainer .listWrap .listItem p {
+  font-size: 0.75rem;
+  color: #f8f9fa;
+}
+
+.clotesContainer .listWrap .listItem > p {
+  font-weight: 700;
+}
+
+.clotesContainer .listWrap .listItem .block {
+  transition: all 0.2s ease;
+}
+
+.clotesContainer .listWrap .listItem .block p {
+  text-transform: uppercase;
+  padding: 4px 4px 0;
+}
+
+.clotesContainer .listWrap .listItem .block img {
+  width: 100%;
+  z-index: 2;
+}
+
+.clotesContainer .listWrap .listItem.active {
+  background: #c8272c;
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+.clotesContainer .listWrap .listItem.active .block p {
+  color: #343434;
+  font-weight: 700;
+}
+.clotesContainer .listWrap .listItem.active .block {
+  background: url("/src/assets/clotes/shapesBg.png") no-repeat,
+    linear-gradient(to bottom, #fff, #fff);
+  background-size: 125%;
+  border-radius: 4px;
+}

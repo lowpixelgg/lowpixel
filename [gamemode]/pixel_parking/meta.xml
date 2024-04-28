@@ -1,0 +1,51 @@
+<meta>
+  <info author="lowpixel.gg" version="1.0" />
+
+  <!-- shared -->
+  <script src="dreamcore.lua" type="client" cache="false" />
+  <script src="shared/yaci.lua" type="shared" cache="false" />
+  <script src="shared/imports.lua" type="shared" />
+  <script src="shared/responsive.lua" type="client" />
+
+  <!-- core -->
+  <script src="core/server/parking.lua" type="server"  />
+  <script src="client/index.lua" type="client" />
+
+  <!-- handlers -->
+  <script src="handlers/factories/server/makeServerFactory.lua" type="server" />
+  
+  <script src="handlers/events/network.lua" type="shared" cache="false" />
+  <script src="handlers/events/server/refresh.lua" type="server" />
+  <script src="handlers/events/client/refresh.lua" type="client" />
+
+
+  <script src="handlers/api/server/exports.lua" type="server" cache="false" />
+
+  <export function="getNearestParking" type="server" />
+
+  <!-- file -->
+  <file src="client/nui/assets/index.js"/>
+  <file src="client/nui/assets/index.css"/>
+  <file src="client/nui/src/swap.css"/>
+  <file src="client/nui/index.html"/>
+
+  <file src="client/nui/src/assets/carIcon.svg"/>
+  <file src="client/nui/src/assets/carIconMod.svg"/>
+  <file src="client/nui/src/assets/carImage.svg"/>
+  <file src="client/nui/src/assets/carStar.svg"/>
+  <file src="client/nui/src/assets/circleIcon.svg"/>
+  <file src="client/nui/src/assets/circleIconMod.svg"/>
+  <file src="client/nui/src/assets/infoIcon.svg"/>
+  <file src="client/nui/src/assets/profileIcon.svg"/>
+
+  <file src="client/nui/src/fonts/RobotoCondensed.woff2" />
+  <file src="client/nui/src/fonts/Inter.woff2" />
+  
+  <file src="client/nui/src/fonts/Exo700.woff2" />
+  <file src="client/nui/src/fonts/Exo400.woff2" />
+  <file src="client/nui/src/fonts/Exo600.woff2" />
+
+
+  <!-- assets -->
+  <file src="assets/ballon.png"/>
+</meta>

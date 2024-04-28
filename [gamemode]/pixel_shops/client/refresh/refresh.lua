@@ -1,0 +1,1 @@
+network:fetch("pixel_shops:onServerOpenShop", true):on(makeClientOpenShop);

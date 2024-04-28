@@ -1,0 +1,28 @@
+<meta>    
+    <min_mta_version server="1.5.2-9.07903" client="1.5.2-9.07903" />
+    
+    <script src="client/cMain.lua" type="client" cache="false"></script>
+    <script src="server/sMain.lua" type="server" cache="false"></script>
+    
+    <file src="assets/aw_ui_notify_arrow.png" />
+    <file src="assets/aw_ui_notify_circle.png" />
+    <file src="assets/aw_ui_notify_warning.png" />
+    <file src="assets/aw_ui_notify_shadow.png" />
+    <file src="assets/sound.wav" />
+
+    <file src="assets/Montserrat-ExtraBold.ttf" />
+    <file src="assets/Montserrat-Bold.ttf" />
+    <file src="assets/Montserrat-SemiBold.ttf" />
+    <file src="assets/Montserrat-Medium.ttf" />
+    <file src="assets/Montserrat-Regular.ttf" />
+
+	<file src="assets/mask3d.fx" />
+    <file src="assets/tex_matrix.fx" />
+    <file src="assets/hud_mask.fx" />
+    <file src="assets/hou_circle.fx" />
+    <file src="assets/circle.fx" />
+	<script src="client/hou_circle.lua" type="client" cache="false" />
+    
+    <export type="client" function="showInfobox" />
+    <export type="server" function="showInfobox" />
+</meta>

@@ -1,0 +1,435 @@
+/* 
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap"); */
+
+@font-face {
+  font-family: "Exo 2";
+  src: url("assets/fonts/exo2/Exo2-SemiBold.woff2") format("woff2"),
+    url("assets/fonts/exo2/Exo2-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("assets/fonts/roboto/Roboto-Regular.woff2") format("woff2"),
+    url("assets/fonts/roboto/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/poppins/Poppins-SemiBold.woff2") format("woff2"),
+    url("assets/fonts/poppins/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("assets/fonts/inconsolata/Inconsolata-Medium.woff2") format("woff2"),
+    url("assets/fonts/inconsolata/Inconsolata-Medium.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+#no_characters {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background: #272727c7;
+
+  transition: 2s;
+}
+
+#container {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(
+    107.9% 107.9% at 50% 50%,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.81) 72.36%
+  );
+
+  opacity: 0;
+  transition: 2s;
+}
+
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#menu {
+  position: absolute;
+  display: flex;
+  width: fit-content;
+  height: 47px;
+}
+
+#menu img {
+  width: 45px;
+  height: 45px;
+  padding: 20px 20px;
+}
+
+#box--player {
+  float: right;
+  display: flex;
+  width: fit-content;
+  height: 47px;
+
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  text-align: right;
+
+  padding: 20px 20px;
+
+  gap: 15px;
+}
+
+#box--player .avatar {
+  position: relative;
+  width: 47px;
+  height: 47px;
+  border-radius: 100%;
+  background-size: cover;
+}
+
+#box--player span {
+  position: relative;
+  width: 22px;
+  height: 22px;
+}
+
+#box--player p {
+  width: auto;
+  height: 16px;
+
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.date {
+  background-image: url("assets/date.svg");
+}
+
+.bell {
+  background-image: url("assets/bell.svg");
+}
+
+.search {
+  background-image: url("assets/search.svg");
+}
+
+.notify {
+  float: right;
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+
+  border: 1px solid #2a2b2f;
+  background-color: #7878f4;
+}
+
+#footer {
+  display: table-footer-group;
+}
+
+#box--play {
+  float: right;
+  display: flex;
+  width: fit-content;
+  height: 38px;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 20px;
+  gap: 21px;
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+}
+
+#box--play .more {
+  width: 26px;
+  height: 26px;
+  background-image: url("assets/more.svg");
+}
+
+#box--play p {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+
+  text-align: right;
+  outline: 0px solid transparent;
+  color: rgba(255, 255, 255, 0.521);
+}
+
+#box--play span {
+  color: rgb(255, 255, 255);
+}
+
+#box--play button {
+  width: 124px;
+  height: 38px;
+
+  background: rgb(79, 79, 207);
+  border-radius: 19px;
+
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+
+  opacity: 40%;
+
+  transition: 0.4s;
+}
+
+#box--play button:hover {
+  opacity: 100%;
+}
+
+#box--tips {
+  width: 431px;
+
+  padding: 30px 50px;
+}
+
+#box--tips p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  color: #c4c4cc;
+  transition: 2s;
+}
+
+#box--tips h1 {
+  height: 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+  transition: 2s;
+}
+
+#box--actions {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 300px;
+  height: 206px;
+  left: 120px;
+  top: 20vh;
+
+  gap: 15px;
+}
+
+#box--actions h3 {
+  width: 100%;
+  height: 20px;
+
+  position: relative;
+
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+
+  color: #ffffff;
+}
+
+#box--actions .buttons {
+  width: 100%;
+
+  display: flex;
+
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  text-align: right;
+}
+
+.item {
+  width: 147.01px;
+  height: 36px;
+
+  display: flex;
+
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  text-align: right;
+
+  padding-left: 10px;
+
+  transform: 2s;
+  gap: 10px;
+
+  border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+.item .icon {
+  width: 17px;
+  height: 18px;
+
+  background-image: url("assets/list.svg");
+}
+
+.item .acheviements {
+  background-image: url("assets/plus.svg");
+}
+
+.item p {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+
+  color: #ffffff;
+}
+
+.active {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.774);
+}
+
+.card--player {
+  position: relative;
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 86px;
+
+  background: rgba(255, 255, 255, 0.342);
+  border: 1px solid rgba(194, 210, 214, 0.349);
+  border-radius: 7px;
+  transition: 0.5s;
+  margin-top: 10px;
+}
+
+#characters {
+  width: 100%;
+  height: auto;
+}
+
+.card--player h1 {
+  position: relative;
+  height: 20px;
+  left: 20px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.card--player p {
+  position: relative;
+  height: 30px;
+  left: 20px;
+
+  font-family: "Inconsolata";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+
+  color: rgba(255, 255, 255, 0.46);
+}
+
+.card--player .box {
+  position: relative;
+  float: right;
+  width: 13px;
+  height: 13px;
+  top: calc(5% - 100px / 2 + 23px);
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.295);
+  border-radius: 100%;
+}
+
+/* .card--player:hover {
+  border: 1px solid rgba(255, 102, 0, 0.952);
+  transition: 0.5s;
+} */
+
+.select {
+  border: 1px solid #7070d4;
+  background-color: #4f4fcf;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.753);
+}
+
+.modal-content {
+  background: url("assets/pascoa.png");
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 800px;
+  height: 500px;
+  background-size: cover;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

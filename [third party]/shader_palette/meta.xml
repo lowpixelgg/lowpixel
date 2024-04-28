@@ -1,0 +1,16 @@
+<meta>
+	<info description="Shader Palette" version="0.0.7" type="script" />
+	<min_mta_version client="1.4.0" server="1.4.0" />
+	<script src="c_palette.lua" type="client" />
+	<script src="c_rtpool.lua" type="client" />
+	<script src="c_switch.lua" type="client" />
+	<script src="c_exports.lua" type="client" />
+	<file src="fx/palette.fx" type="client" />
+	<file src="fx/chromatic.fx" type="client" />
+	<file src="palette/enbpalette.bmp" type="client" />
+	<export function="setPaletteEnabled" type="client" />
+	<export function="setChromaticEnabled" type="client" />
+	<export function="setOrderPriority" type="client" />
+	<export function="setPalette" type="client" />
+	<export function="resetPalette" type="client" />
+</meta>

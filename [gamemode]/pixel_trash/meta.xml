@@ -1,0 +1,17 @@
+<meta>
+    <script src="dreamcore.lua" type="shared" cache="false" />
+    <script src="global.lua" type="shared" cache="false" />
+    
+
+
+    <!-- server -->
+    <script src="server/main.lua" type="server" cache="false" />
+    
+    <!-- client -->
+    <script src="client/main.lua" type="client" cache="false" />
+
+    <!-- events -->
+    <script src="handlers/events/network.lua" type="client" cache="false" />
+
+    <file src="assets/trashs.ipl"/>
+</meta>

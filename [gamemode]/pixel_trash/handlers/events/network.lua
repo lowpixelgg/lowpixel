@@ -1,0 +1,1 @@
+network:create("pixel_trash:onWidgetReady", false);

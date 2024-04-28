@@ -1,0 +1,9 @@
+network:create("pixel_characters:onInventoryRefresh", false);
+network:create("pixel_characters:onInventoryUseItem", false);
+network:create("pixel_characters:createSoundEffect", false);
+network:create("pixel_characters:soundEffect", false);
+network:create("pixel_characters:createAnimEffect", false);
+network:create("pixel_characters:onServerRequestEat", false);
+network:create("pixel_characters:onClientEatItem", false);
+network:create("pixel_characters:onPlayerFall", false);
+network:create("pixel_characters:onServerCancelTimer", false);

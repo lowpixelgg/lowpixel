@@ -1,0 +1,48 @@
+<meta>
+    <oop>true</oop>
+    <info author="lowpixel.gg" version="1.0.0" />
+    <min_mta_version client="1.5.8-9.20979"></min_mta_version>
+    
+
+    <script src="dreamcore.lua" type="shared" cache="false" />
+    <script src="utils/utils.lua" type="client" cache="false" />
+
+    <script src="core/client/actions.lua" type="client" />
+
+    <script src="core/client/shaders.lua" type="client" />
+    <script src="core/client/design.lua" type="client" />
+    <script src="core/client/numberplate.lua" type="client" />
+    <script src="core/client/camera.lua" type="client" />
+    <!-- <script src="core/client/lights.lua" type="client" /> -->
+    <script src="core/client/components.lua" type="client" />
+    <script src="core/client/radio.lua" type="client" />
+    <script src="core/client/vehicle.lua" type="client" />
+    
+    <script src="core/server/element.lua" type="server" />
+    <script src="core/server/vehicle.lua" type="server" />
+
+
+    <script src="infra/events/network.lua" type="shared" cache="false" />
+    
+    <script src="infra/factories/server/makeServerFactory.lua" type="server" cache="false" />
+    
+    <script src="infra/events/client/refresh.lua" type="client" cache="false" />
+    <script src="infra/events/server/refresh.lua" type="server" cache="false" />
+
+    <script src="infra/api/exports.lua" type="server" />
+
+    <!-- exports -->
+    <export function="setVehicleDamage" type="server" />
+    <export function="spawnVehicle" type="server" />
+    <export function="destroyVehicle" type="server" />
+    <export function="isVehicleSpawned" type="server" />
+    <export function="setVehicleFuel" type="server" />
+    <export function="createVehicle" type="server" />
+
+    <file src="assets/numberplate.ttf" />
+    <file src="assets/numberplate.png" />
+    <file src="assets/car_lock.png" />
+    <file src="assets/car_lock_glow.png" />
+    <file src="assets/car_storage.png" />
+    <file src="assets/sounds/radio_placeholder.mp3" />
+</meta>

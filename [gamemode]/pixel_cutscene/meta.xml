@@ -1,0 +1,28 @@
+<meta>
+	<info author="rocketmta.com(Márcio)" version="1.0.0" />
+
+	<script src="builder/client.lua" type="client" cache="false" />
+
+	<!-- CutScenes -->
+	<script src="cutscenes/index.lua" type="client" cache="false" />
+	<script src="cutscenes/sport.lua" type="client" cache="false" />
+
+	<!-- Handlers -->
+	<script src="handlers/network.lua" type="client" cache="false" />
+	<script src="handlers/api.lua" type="client" cache="false" />
+
+	<!-- Essentials -->
+	<script src="essentials/manager.lua" type="client" cache="false" />
+	<script src="essentials/screen.lua" type="client" cache="false" />
+	<script src="essentials/camera.lua" type="client" cache="false" />
+	<script src="essentials/music.lua" type="client" cache="false" />
+	<script src="essentials/syncer.lua" type="client" cache="false" />
+
+	<!-- Sounds -->
+	<file src="assets/sounds/airplanemode.mp3" />
+
+	<!-- Exports -->
+	<export function="play" type="client" />
+
+	<min_mta_version client="1.5.7-9.20147" />
+</meta>

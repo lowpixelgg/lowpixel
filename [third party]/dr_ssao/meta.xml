@@ -1,0 +1,11 @@
+<meta>
+    <info description="dr_ssao" version="0.0.3" type="script" />
+    <min_mta_version client="1.5.7-9.20157"></min_mta_version>
+    <script src="c_main.lua" type="client" />
+    <script src="c_switch.lua" type="client" />
+    <file src="fx/primitive3D_ssao.fx" type="client" />
+    <file src="fx/primitive3D_ssao_dr.fx" type="client" />
+    <file src="fx/material3D_ssao.fx" type="client" />
+    <file src="fx/material3D_ssao_dr.fx" type="client" />
+    <file src="fx/ssao_dr_settings.txt" type="client" />
+</meta>

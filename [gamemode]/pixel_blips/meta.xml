@@ -1,0 +1,31 @@
+<meta>
+    <oop>true</oop>
+    <info author="motar2k" version="1.0.0" name="pixel_blips" type="script" />
+    
+    <script src="client/manager.lua" type="client" cache="false" />
+    <script src="client/main.lua" type="client" cache="false" />
+    <script src="server/main.lua" type="server" />
+    
+    <export function="createBlip" type="shared"/>
+    <export function="createBlipAttachedTo" type="shared"/>
+    <export function="isBlip" type="shared"/>
+    <export function="getBlipCache" type="shared"/>
+    <export function="getBlipName" type="shared"/>
+    <export function="getBlipIcon" type="shared"/>
+    <export function="getBlipColor" type="shared"/>
+    <export function="getBlipOrdering" type="shared"/>
+    <export function="getBlipVisibleDistance" type="shared"/>
+    <export function="getBlipPosition" type="shared"/>
+    <export function="getBlipDimension" type="shared"/>
+    <export function="getBlipInterior" type="shared"/>
+    <export function="setBlipName" type="shared"/>
+    <export function="setBlipIcon" type="shared"/>
+    <export function="setBlipColor" type="shared"/>
+    <export function="setBlipOrdering" type="shared"/>
+    <export function="setBlipVisibleDistance" type="shared"/>
+    <export function="setBlipPosition" type="shared"/>
+    <export function="setBlipDimension" type="shared"/>
+    <export function="setBlipInterior" type="shared"/>
+    <export function="destroyBlip" type="shared"/>
+    <export function="getBlips" type="shared"/>
+</meta>

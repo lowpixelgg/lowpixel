@@ -1,0 +1,35 @@
+<meta>
+	<info name="WebUI" author="Jusonex" type="misc"/>
+	<oop>true</oop>
+	
+	<!-- Sourcecode: Include the following files in your own gamemode -->
+	<script src="src/WebWindow.lua" type="client"/>
+	<script src="src/FrameWebWindow.lua" type="client"/>
+	<script src="src/WebUIManager.lua" type="client"/>
+	<script src="src/ExportsAPI.lua" type="client"/>
+	
+	<!-- Exports API -->
+	<export function="startUp" type="client"/>
+	<export function="createWebWindow" type="client"/>
+	<export function="destroyWebWindow" type="client"/>
+	<export function="getWebWindowPosition" type="client"/>
+	<export function="setWebWindowPosition" type="client"/>
+	<export function="loadWebWindowURL" type="client"/>
+	<export function="getWebWindowTexture" type="client"/>
+	<export function="executeJavascript" type="client"/>
+	<export function="getBrowser" type="client"/>
+	<export function="onBrowserEvent" type="client" />
+	<export function="createGhost" type="client" />
+	<export function="executeJavascriptWithoutEvent" type="client"/>
+	<export function="draw" type="client" http="false"/>
+	<!-- Tests and examples -->
+	<!-- <script src="examples/MyTestUI.lua" type="client"/>
+	<script src="examples/Main.lua" type="client"/> -->
+	
+	<!-- Test HTML files -->
+	<!-- <file src="examples/html/ui1.html"/>
+	<file src="examples/html/ui2.html"/>
+	<file src="examples/html/ui3.html"/>
+	<file src="examples/html/media/mta_cef.png"/>
+	 -->
+</meta>

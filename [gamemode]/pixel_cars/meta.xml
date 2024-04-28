@@ -1,0 +1,104 @@
+<meta>
+    <script src="replace.lua" type="shared" cache="false" />
+    <script src="spawn.lua" type="server" cache="false" />
+
+    <file src="cars/911.txd" />
+	<file src="cars/911.dff" />
+	 
+	<file src="cars/camaro.txd" />
+	<file src="cars/camaro.dff" />
+	
+	<file src="cars/challenger.txd" />
+	<file src="cars/challenger.dff" />
+	
+	<file src="cars/panamera.txd" />
+	<file src="cars/panamera.dff" />
+	
+	<file src="cars/r34.txd" />
+	<file src="cars/r34.dff" />
+	
+	<file src="cars/240.txd" />
+	<file src="cars/240.dff" />
+	
+	<file src="cars/lamborghini.txd" />
+	<file src="cars/lamborghini.dff" />
+	
+	<file src="cars/rav4.txd" />
+	<file src="cars/rav4.dff" />
+	
+	<file src="cars/civic.txd" />
+	<file src="cars/civic.dff" />
+	 
+     <file src="cars/bentayga.txd" />
+     <file src="cars/bentayga.dff" />
+
+     <file src="cars/xc90.txd" />
+     <file src="cars/xc90.dff" />
+
+     <file src="cars/f150.txd" />
+     <file src="cars/f150.dff" />
+
+     <file src="cars/golfmk8.txd" />
+     <file src="cars/golfmk8.dff" />
+
+     <file src="cars/corolla.txd" />
+     <file src="cars/corolla.dff" />
+
+     <file src="cars/m3g80.txd" />
+     <file src="cars/m3g80.dff" />
+
+     <file src="cars/ferrarisf90.txd" />
+     <file src="cars/ferrarisf90.dff" />
+
+     <file src="cars/senna.txd" />
+     <file src="cars/senna.dff" />
+
+     <file src="cars/royce.txd" />
+     <file src="cars/royce.dff" />
+
+     <file src="cars/charger.txd" />
+     <file src="cars/charger.dff" />
+
+     <file src="cars/tundra.txd" />
+     <file src="cars/tundra.dff" />
+
+     <file src="cars/impala.txd" />
+     <file src="cars/impala.dff" />
+
+     <file src="cars/subaru.txd" />
+     <file src="cars/subaru.dff" />
+
+     <file src="cars/prelude.txd" />
+     <file src="cars/prelude.dff" />
+
+     <file src="cars/e36.txd" />
+     <file src="cars/e36.dff" />
+
+     <file src="cars/golfmk3.txd" />
+     <file src="cars/golfmk3.dff" />
+
+     <file src="cars/fiesta.txd" />
+     <file src="cars/fiesta.dff" />
+
+     <file src="cars/nsx.txd" />
+     <file src="cars/nsx.dff" />
+
+     <file src="cars/rangerover.txd" />
+     <file src="cars/rangerover.dff" />
+
+     <file src="cars/lancer.txd" />
+     <file src="cars/lancer.dff" />
+
+     <file src="cars/chevelle.txd" />
+     <file src="cars/chevelle.dff" />
+
+     <file src="cars/amggt.txd" />
+     <file src="cars/amggt.dff" />
+
+     <file src="cars/w223.txd" />
+     <file src="cars/w223.dff" />
+
+     <file src="cars/integra.txd" />
+     <file src="cars/integra.dff" />
+
+</meta>

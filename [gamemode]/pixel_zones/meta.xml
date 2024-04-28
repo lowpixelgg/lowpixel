@@ -1,0 +1,16 @@
+<meta>
+    <info author="lowpixel.gg" version="1.0"  />
+
+    <script src="dreamcore.lua" type="shared" cache="false" />
+
+    <script src="zones.lua" type="shared" cache="false" />
+    <script src="tests.lua" type="server" cache="false" />
+
+    <export function="createZone" type="shared" />
+    <export function="getShapeInfo" type="shared" />
+    <export function="isElementWithinZone" type="shared" />
+    <export function="getShapeAxisZ" type="shared" />
+    <export function="getAllShapeElements" type="shared" />
+    <export function="getShapeCenterAndRadius" type="shared" />
+    <export function="isPointInsidePolygon" type="shared" />
+</meta>

@@ -1,0 +1,47 @@
+@keyframes appear {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+.appear {
+    animation-name: appear;
+    animation-duration: 0.6s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes disappear {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0%;
+    }
+}
+
+.disappear {
+    animation-name: disappear;
+    animation-duration: 0.6s;
+    animation-fill-mode: backwards;
+}
+
+
+
+@keyframes opacity {
+    0%, 100% {
+        opacity: 10%;
+    }
+    
+    50% {
+        opacity: 80%;
+    }
+}
+
+.opacity {
+    animation: opacity 1.5s ease-in-out infinite;
+}
